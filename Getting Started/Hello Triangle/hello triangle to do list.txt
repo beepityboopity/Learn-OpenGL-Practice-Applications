@@ -1,7 +1,9 @@
 hello triangle to do list
 
 1-count total number of triangles needed to write "Hello Triangle"
+	79 triangles, color 1: 15 - color 2: 15 - color 3: 25 - color 4: 24
 2-determine vertices
+	
 3-pick colors
 4-write shaders, test with original code
 5-create VBO/VAO for each color used

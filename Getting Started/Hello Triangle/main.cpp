@@ -84,14 +84,90 @@ int main()
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
     float firstTriangle[] = {
-        -0.9f, -0.5f, 0.0f,  // left 
-        -0.0f, -0.5f, 0.0f,  // right
-        -0.45f, 0.5f, 0.0f,  // top 
+-0.75f, 0.15f, 0.0f, // T
+-0.50f, 0.15f, 0.0f,
+-0.50f, 0.20f, 0.0f,
+
+-0.65f, 0.15f, 0.0f,
+-0.60f, 0.15f, 0.0f,
+-0.60f, -0.05f, 0.0f,
+
+-0.45f, 0.2f, 0.0f, // R
+-0.40f, 0.2f, 0.0f,
+-0.40f, -0.10f, 0.0f,
+
+-0.40f, 0.15f, 0.0f,
+-0.30f, 0.15f, 0.0f,
+-0.30f, 0.2f, 0.0f,
+
+-0.30f, 0.15f, 0.0f,
+-0.30f, 0.10f, 0.0f,
+-0.35f, 0.15f, 0.0f,
+
+-0.40f, 0.05f, 0.0f,
+-0.30f, 0.05f, 0.0f,
+-0.30f, 0.10f, 0.0f,
     };
     float secondTriangle[] = {
-        0.0f, -0.5f, 0.0f,  // left
-        0.9f, -0.5f, 0.0f,  // right
-        0.45f, 0.5f, 0.0f   // top 
+-0.9f, 0.55f, 0.0f, // H
+-0.9f, 0.3f, 0.0f,
+-0.85f, 0.30f, 0.0f,
+
+-0.85f, 0.4f, 0.0f,
+-0.7f, 0.45f, 0.0f,
+-0.85f, 0.45f, 0.0f,
+
+-0.7f, 0.55f, 0.0f,
+-0.7f, 0.3f, 0.0f,
+-0.65f, 0.30f, 0.0f,
+
+-0.6f, 0.55f, 0.0f, // E
+-0.6f, 0.3f, 0.0f,
+-0.55f, 0.30f, 0.0f,
+
+-0.55f, 0.5f, 0.0f,
+-0.55f, 0.55f, 0.0f,
+-0.45f, 0.55f, 0.0f,
+
+-0.55f, 0.4f, 0.0f,
+-0.55f, 0.45f, 0.0f,
+-0.45f, 0.45f, 0.0f,
+
+-0.55f, 0.3f, 0.0f,
+-0.55f, 0.35f, 0.0f,
+-0.45f, 0.35f, 0.0f,
+
+-0.4f, 0.55f, 0.0f, // L1
+-0.4f, 0.3f, 0.0f,
+-0.35f, 0.30f, 0.0f,
+
+-0.35f, 0.3f, 0.0f,
+-0.35f, 0.35f, 0.0f,
+-0.25f, 0.35f, 0.0f,
+
+-0.2f, 0.55f, 0.0f, // L2
+-0.2f, 0.3f, 0.0f,
+-0.15f, 0.30f, 0.0f,
+
+-0.15f, 0.3f, 0.0f,
+-0.15f, 0.35f, 0.0f,
+-0.05f, 0.35f, 0.0f,
+
+0.0f, 0.55f, 0.0f, // O
+0.0f, 0.3f, 0.0f,
+0.05f, 0.30f, 0.0f,
+
+0.05f, 0.3f, 0.0f,
+0.05f, 0.35f, 0.0f,
+0.15f, 0.35f, 0.0f,
+
+0.05f, 0.5f, 0.0f,
+0.05f, 0.55f, 0.0f,
+0.15f, 0.55f, 0.0f,
+
+0.15f, 0.55f, 0.0f,
+0.15f, 0.3f, 0.0f,
+0.20f, 0.30f, 0.0f
     };
     unsigned int VBOs[2], VAOs[2];
     glGenVertexArrays(2, VAOs); // we can also generate multiple VAOs or buffers at the same time
@@ -134,12 +210,12 @@ int main()
         glUseProgram(shaderProgramOrange);
         // draw the first triangle using the data from our first VAO
         glBindVertexArray(VAOs[0]);
-        glDrawArrays(GL_TRIANGLES, 0, 3);	// this call should output an orange triangle
+        glDrawArrays(GL_TRIANGLES, 0, 18);	// this call should output an orange triangle
         // then we draw the second triangle using the data from the second VAO
         // when we draw the second triangle we want to use a different shader program so we switch to the shader program with our yellow fragment shader.
         glUseProgram(shaderProgramYellow);
         glBindVertexArray(VAOs[1]);
-        glDrawArrays(GL_TRIANGLES, 0, 3);	// this call should output a yellow triangle
+        glDrawArrays(GL_TRIANGLES, 0, 45);	// this call should output a yellow triangle
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------
