@@ -15,17 +15,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="source\imgui_impl_glfw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="source\imgui_impl_opengl3.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="header\imgui.cpp">
-      <Filter>Header Files</Filter>
     </ClCompile>
     <ClCompile Include="header\imgui_demo.cpp">
       <Filter>Header Files</Filter>
@@ -39,34 +33,14 @@
     <ClCompile Include="header\imgui_widgets.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="source\imgui_impl_glfw.h">
+    <ClCompile Include="header\imgui.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\imgui_impl_opengl3.h">
+    </ClCompile>
+    <ClCompile Include="..\glad.c">
       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="header\imconfig.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="header\imgui.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="header\imgui_internal.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="header\imstb_rectpack.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="header\imstb_textedit.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="header\imstb_truetype.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\imgui clone\backends\imgui_impl_opengl3_loader.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
+    </ClCompile>
   </ItemGroup>
 </Project>

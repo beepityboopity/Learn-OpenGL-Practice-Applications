@@ -1,9 +1,10 @@
 #include <glad/glad.h>
-#include <GLFW/GLFW3.h>
+#include <GLFW/glfw3.h>
 #include <imgui.h>
 #include <imgui_impl_glfw.h>
 #include <imgui_impl_opengl3.h>
+#include <iostream>
 
-int main() {
-	return 0;
+int main() {   
+    return 0;
 }
