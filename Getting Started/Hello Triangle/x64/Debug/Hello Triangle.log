@@ -1,2 +1,4 @@
-﻿  main.cpp
-  Hello Triangle.vcxproj -> C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Hello Triangle\x64\Debug\Hello Triangle.exe
+﻿  glad.c
+  main.cpp
+  LINK : C:\Users\Owner\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Hello Triangle\x64\Debug\Hello Triangle.exe not found or not built by the last incremental link; performing full link
+  Hello Triangle.vcxproj -> C:\Users\Owner\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Hello Triangle\x64\Debug\Hello Triangle.exe
