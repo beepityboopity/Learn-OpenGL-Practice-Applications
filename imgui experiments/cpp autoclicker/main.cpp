@@ -36,14 +36,15 @@ int main()
 
     UseImGui myimgui;
     myimgui.Init(window, glsl_version);
+    static float red, green, blue;
 
     while (!glfwWindowShouldClose(window))
     {
         processInput(window);
         myimgui.NewFrame();
-        glClearColor(myimgui.Update(),0.0f , myimgui.Update(), 1.0f);
+        glClearColor(myimgui.RedUpdate(), myimgui.GreenUpdate(), myimgui.BlueUpdate(), 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
-
+        
 
         
         myimgui.Render();

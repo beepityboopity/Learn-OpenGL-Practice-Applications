@@ -8,7 +8,9 @@ class UseImGui {
 public:
 	void Init(GLFWwindow* window, const char* glsl_version);
 	void NewFrame();
-	virtual float Update();
+	virtual float RedUpdate();
+	virtual float GreenUpdate();
+	virtual float BlueUpdate();
 	void Render();
 	void Shutdown();
 };
