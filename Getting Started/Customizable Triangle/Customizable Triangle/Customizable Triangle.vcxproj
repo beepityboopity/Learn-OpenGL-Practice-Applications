@@ -19,13 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\headers and libraries\imgui files\imgui.cpp" />
-    <ClCompile Include="..\..\..\..\headers and libraries\imgui files\imgui_demo.cpp" />
-    <ClCompile Include="..\..\..\..\headers and libraries\imgui files\imgui_draw.cpp" />
-    <ClCompile Include="..\..\..\..\headers and libraries\imgui files\imgui_impl_glfw.cpp" />
-    <ClCompile Include="..\..\..\..\headers and libraries\imgui files\imgui_impl_opengl3.cpp" />
-    <ClCompile Include="..\..\..\..\headers and libraries\imgui files\imgui_tables.cpp" />
-    <ClCompile Include="..\..\..\..\headers and libraries\imgui files\imgui_widgets.cpp" />
+    <ClCompile Include="..\..\..\..\imgui\backends\imgui_impl_glfw.cpp" />
+    <ClCompile Include="..\..\..\..\imgui\backends\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="..\..\..\..\imgui\imgui.cpp" />
+    <ClCompile Include="..\..\..\..\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\..\..\..\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\..\..\..\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\..\..\..\imgui\imgui_widgets.cpp" />
     <ClCompile Include="..\..\..\glad.c" />
     <ClCompile Include="imguiconfigs.cpp" />
     <ClCompile Include="main.cpp" />
