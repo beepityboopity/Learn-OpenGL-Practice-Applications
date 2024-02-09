@@ -20,7 +20,7 @@ void UseImGui::NewFrame()
 
 float UseImGui::RedUpdate() {
 	static float red = 0.0f;
-	ImGui::Begin("hello im gui");
+	ImGui::Begin("background color");
 	ImGui::SliderFloat("red", &red, 0.0f, 1.0f);
 	ImGui::End();
 	return red;
@@ -28,7 +28,7 @@ float UseImGui::RedUpdate() {
 
 float UseImGui::GreenUpdate() {
 	static float green = 0.0f;
-	ImGui::Begin("hello im gui");
+	ImGui::Begin("background color");
 	ImGui::SliderFloat("green", &green, 0.0f, 1.0f);
 	ImGui::End();
 	return green;
@@ -36,7 +36,7 @@ float UseImGui::GreenUpdate() {
 
 float UseImGui::BlueUpdate() {
 	static float blue = 0.0f;
-	ImGui::Begin("hello im gui");
+	ImGui::Begin("background color");
 	ImGui::SliderFloat("blue", &blue, 0.0f, 1.0f);
 	ImGui::End();
 	return blue;
