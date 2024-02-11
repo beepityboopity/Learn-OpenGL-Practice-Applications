@@ -1,6 +1,9 @@
-﻿  imgui_impl_glfw.cpp
-  main.cpp
+﻿  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_glfw.cpp
+  imgui_impl_opengl3.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
   Generating Code...
-  glad.c
-  LINK : C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Customizable Triangle\x64\Debug\Customizable Triangle.exe not found or not built by the last incremental link; performing full link
-  Customizable Triangle.vcxproj -> C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Customizable Triangle\x64\Debug\Customizable Triangle.exe
+  Customizable Triangle.vcxproj -> C:\Users\Owner\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Customizable Triangle\x64\Debug\Customizable Triangle.exe
