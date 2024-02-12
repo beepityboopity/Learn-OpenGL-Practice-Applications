@@ -475,7 +475,7 @@ int main()
         glDrawArrays(GL_TRIANGLES, 0, 81);
 
         glfwSwapBuffers(window);
-        glfwPollEvents();
+        glfwWaitEvents();
     }
     // delete programs and terminate
     glDeleteVertexArrays(2, VAOs);

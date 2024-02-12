@@ -132,7 +132,7 @@ int main()
 
         myimgui.Render();
         glfwSwapBuffers(window);
-        glfwPollEvents();
+        glfwWaitEvents();
     }
     myimgui.Shutdown();
     glfwTerminate();
