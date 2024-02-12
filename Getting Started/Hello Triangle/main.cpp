@@ -5,51 +5,52 @@
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
 
-// settings
-const unsigned int SCR_WIDTH = 800;
-const unsigned int SCR_HEIGHT = 600;
-
 const char* vertexShaderSource = "#version 330 core\n"
 "layout (location = 0) in vec3 aPos;\n"
 "void main()\n"
 "{\n"
 "   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
 "}\0";
+
 const char* fragmentShader1Source = "#version 330 core\n"
 "out vec4 FragColor;\n"
 "void main()\n"
 "{\n"
-"   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
+"   FragColor = vec4(0.2656f, 0.2226f, 0.3398f, 1.0f);\n"
 "}\n\0";
+
 const char* fragmentShader2Source = "#version 330 core\n"
 "out vec4 FragColor;\n"
 "void main()\n"
 "{\n"
-"   FragColor = vec4(1.0f, 1.0f, 0.0f, 1.0f);\n"
+"   FragColor = vec4(0.5078f, 0.3516f, 0.5352f, 1.0f);\n"
+"}\n\0";
+
+const char* fragmentShader3Source = "#version 330 core\n"
+"out vec4 FragColor;\n"
+"void main()\n"
+"{\n"
+"   FragColor = vec4(0.7343f, 0.4804f, 0.6172f, 1.0f);\n"
+"}\n\0";
+
+const char* fragmentShader4Source = "#version 330 core\n"
+"out vec4 FragColor;\n"
+"void main()\n"
+"{\n"
+"   FragColor = vec4(0.9297f, 0.6094f, 0.6406f, 1.0f);\n"
 "}\n\0";
 
 
 int main()
 {
-    // glfw: initialize and configure
-    // ------------------------------
+    //initialization
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-
-#ifdef __APPLE__
-    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-#endif
-
-    // glfw window creation
-    // --------------------
-    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Hello Triangle", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(800, 600, "Hello Triangle", NULL, NULL);
     glfwMakeContextCurrent(window);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
-
-    // glad: load all OpenGL function pointers
-    // ---------------------------------------
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
         std::cout << "Failed to initialize GLAD" << std::endl;
@@ -57,187 +58,438 @@ int main()
     }
 
 
-    // build and compile our shader program
-    // ------------------------------------
-    // we skipped compile log checks this time for readability (if you do encounter issues, add the compile-checks! see previous code samples)
+    // create vertex shader and four fragment shaders
     unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER);
-    unsigned int fragmentShaderOrange = glCreateShader(GL_FRAGMENT_SHADER); // the first fragment shader that outputs the color orange
-    unsigned int fragmentShaderYellow = glCreateShader(GL_FRAGMENT_SHADER); // the second fragment shader that outputs the color yellow
-    unsigned int shaderProgramOrange = glCreateProgram();
-    unsigned int shaderProgramYellow = glCreateProgram(); // the second shader program
+    unsigned int fragmentShader1 = glCreateShader(GL_FRAGMENT_SHADER);
+    unsigned int fragmentShader2 = glCreateShader(GL_FRAGMENT_SHADER);
+    unsigned int fragmentShader3 = glCreateShader(GL_FRAGMENT_SHADER);
+    unsigned int fragmentShader4 = glCreateShader(GL_FRAGMENT_SHADER);
+
+    unsigned int shaderProgram1 = glCreateProgram();
+    unsigned int shaderProgram2 = glCreateProgram();
+    unsigned int shaderProgram3 = glCreateProgram();
+    unsigned int shaderProgram4 = glCreateProgram();
+
     glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
     glCompileShader(vertexShader);
-    glShaderSource(fragmentShaderOrange, 1, &fragmentShader1Source, NULL);
-    glCompileShader(fragmentShaderOrange);
-    glShaderSource(fragmentShaderYellow, 1, &fragmentShader2Source, NULL);
-    glCompileShader(fragmentShaderYellow);
-    // link the first program object
-    glAttachShader(shaderProgramOrange, vertexShader);
-    glAttachShader(shaderProgramOrange, fragmentShaderOrange);
-    glLinkProgram(shaderProgramOrange);
-    // then link the second program object using a different fragment shader (but same vertex shader)
-    // this is perfectly allowed since the inputs and outputs of both the vertex and fragment shaders are equally matched.
-    glAttachShader(shaderProgramYellow, vertexShader);
-    glAttachShader(shaderProgramYellow, fragmentShaderYellow);
-    glLinkProgram(shaderProgramYellow);
 
-    // set up vertex data (and buffer(s)) and configure vertex attributes
-    // ------------------------------------------------------------------
-    float firstTriangle[] = {
--0.75f, 0.15f, 0.0f, // T
--0.50f, 0.15f, 0.0f,
--0.50f, 0.20f, 0.0f,
+    glShaderSource(fragmentShader1, 1, &fragmentShader1Source, NULL);
+    glCompileShader(fragmentShader1);
+    glShaderSource(fragmentShader2, 1, &fragmentShader2Source, NULL);
+    glCompileShader(fragmentShader2);
+    glShaderSource(fragmentShader3, 1, &fragmentShader3Source, NULL);
+    glCompileShader(fragmentShader3);
+    glShaderSource(fragmentShader4, 1, &fragmentShader4Source, NULL);
+    glCompileShader(fragmentShader4);
 
--0.65f, 0.15f, 0.0f,
--0.60f, 0.15f, 0.0f,
--0.60f, -0.05f, 0.0f,
+    glAttachShader(shaderProgram1, vertexShader);
+    glAttachShader(shaderProgram1, fragmentShader1);
+    glLinkProgram(shaderProgram1);
+    glAttachShader(shaderProgram2, vertexShader);
+    glAttachShader(shaderProgram2, fragmentShader2);
+    glLinkProgram(shaderProgram2);
+    glAttachShader(shaderProgram3, vertexShader);
+    glAttachShader(shaderProgram3, fragmentShader3);
+    glLinkProgram(shaderProgram3);
+    glAttachShader(shaderProgram4, vertexShader);
+    glAttachShader(shaderProgram4, fragmentShader4);
+    glLinkProgram(shaderProgram4);
 
--0.45f, 0.2f, 0.0f, // R
--0.40f, 0.2f, 0.0f,
--0.40f, -0.10f, 0.0f,
+    //triangle vertices grouped by color
+    float Hello1[] = {
+        -0.9f, 0.55f, 0.0f, // H
+        -0.85f, 0.55f, 0.0f,
+        -0.85f, 0.30f, 0.0f,
 
--0.40f, 0.15f, 0.0f,
--0.30f, 0.15f, 0.0f,
--0.30f, 0.2f, 0.0f,
+        -0.85f, 0.4f, 0.0f,
+        -0.7f, 0.45f, 0.0f,
+        -0.7f, 0.4f, 0.0f,
 
--0.30f, 0.15f, 0.0f,
--0.30f, 0.10f, 0.0f,
--0.35f, 0.15f, 0.0f,
+        -0.7f, 0.55f, 0.0f,
+        -0.65f, 0.55f, 0.0f,
+        -0.65f, 0.30f, 0.0f,
 
--0.40f, 0.05f, 0.0f,
--0.30f, 0.05f, 0.0f,
--0.30f, 0.10f, 0.0f,
+        -0.6f, 0.55f, 0.0f, // E
+        -0.55f, 0.55f, 0.0f,
+        -0.55f, 0.30f, 0.0f,
+
+        -0.55f, 0.5f, 0.0f,
+        -0.45f, 0.5f, 0.0f,
+        -0.45f, 0.55f, 0.0f,
+
+        -0.55f, 0.4f, 0.0f,
+        -0.45f, 0.4f, 0.0f,
+        -0.45f, 0.45f, 0.0f,
+
+        -0.55f, 0.3f, 0.0f,
+        -0.45f, 0.3f, 0.0f,
+        -0.45f, 0.35f, 0.0f,
+
+        -0.4f, 0.55f, 0.0f, // L1
+        -0.35f, 0.55f, 0.0f,
+        -0.35f, 0.30f, 0.0f,
+
+        -0.35f, 0.3f, 0.0f,
+        -0.25f, 0.3f, 0.0f,
+        -0.25f, 0.35f, 0.0f,
+
+        -0.2f, 0.55f, 0.0f, // L2
+        -0.15f, 0.55f, 0.0f,
+        -0.15f, 0.30f, 0.0f,
+
+        -0.15f, 0.3f, 0.0f,
+        -0.05f, 0.3f, 0.0f,
+        -0.05f, 0.35f, 0.0f,
+
+        0.0f, 0.55f, 0.0f, // O
+        0.05f, 0.55f, 0.0f,
+        0.05f, 0.30f, 0.0f,
+
+        0.05f, 0.3f, 0.0f,
+        0.15f, 0.3f, 0.0f,
+        0.15f, 0.35f, 0.0f,
+
+        0.05f, 0.5f, 0.0f,
+        0.15f, 0.5f, 0.0f,
+        0.15f, 0.55f, 0.0f,
+
+        0.15f, 0.55f, 0.0f,
+        0.20f, 0.55f, 0.0f,
+        0.20f, 0.30f, 0.0f
     };
-    float secondTriangle[] = {
--0.9f, 0.55f, 0.0f, // H
--0.9f, 0.3f, 0.0f,
--0.85f, 0.30f, 0.0f,
+    float Hello2[] = {
+        -0.9f, 0.55f, 0.0f, // H
+        -0.9f, 0.3f, 0.0f,
+        -0.85f, 0.30f, 0.0f,
 
--0.85f, 0.4f, 0.0f,
--0.7f, 0.45f, 0.0f,
--0.85f, 0.45f, 0.0f,
+        -0.85f, 0.4f, 0.0f,
+        -0.7f, 0.45f, 0.0f,
+        -0.85f, 0.45f, 0.0f,
 
--0.7f, 0.55f, 0.0f,
--0.7f, 0.3f, 0.0f,
--0.65f, 0.30f, 0.0f,
+        -0.7f, 0.55f, 0.0f,
+        -0.7f, 0.3f, 0.0f,
+        -0.65f, 0.30f, 0.0f,
 
--0.6f, 0.55f, 0.0f, // E
--0.6f, 0.3f, 0.0f,
--0.55f, 0.30f, 0.0f,
+        -0.6f, 0.55f, 0.0f, // E
+        -0.6f, 0.3f, 0.0f,
+        -0.55f, 0.30f, 0.0f,
 
--0.55f, 0.5f, 0.0f,
--0.55f, 0.55f, 0.0f,
--0.45f, 0.55f, 0.0f,
+        -0.55f, 0.5f, 0.0f,
+        -0.55f, 0.55f, 0.0f,
+        -0.45f, 0.55f, 0.0f,
 
--0.55f, 0.4f, 0.0f,
--0.55f, 0.45f, 0.0f,
--0.45f, 0.45f, 0.0f,
+        -0.55f, 0.4f, 0.0f,
+        -0.55f, 0.45f, 0.0f,
+        -0.45f, 0.45f, 0.0f,
 
--0.55f, 0.3f, 0.0f,
--0.55f, 0.35f, 0.0f,
--0.45f, 0.35f, 0.0f,
+        -0.55f, 0.3f, 0.0f,
+        -0.55f, 0.35f, 0.0f,
+        -0.45f, 0.35f, 0.0f,
 
--0.4f, 0.55f, 0.0f, // L1
--0.4f, 0.3f, 0.0f,
--0.35f, 0.30f, 0.0f,
+        -0.4f, 0.55f, 0.0f, // L1
+        -0.4f, 0.3f, 0.0f,
+        -0.35f, 0.30f, 0.0f,
 
--0.35f, 0.3f, 0.0f,
--0.35f, 0.35f, 0.0f,
--0.25f, 0.35f, 0.0f,
+        -0.35f, 0.3f, 0.0f,
+        -0.35f, 0.35f, 0.0f,
+        -0.25f, 0.35f, 0.0f,
 
--0.2f, 0.55f, 0.0f, // L2
--0.2f, 0.3f, 0.0f,
--0.15f, 0.30f, 0.0f,
+        -0.2f, 0.55f, 0.0f, // L2
+        -0.2f, 0.3f, 0.0f,
+        -0.15f, 0.30f, 0.0f,
 
--0.15f, 0.3f, 0.0f,
--0.15f, 0.35f, 0.0f,
--0.05f, 0.35f, 0.0f,
+        -0.15f, 0.3f, 0.0f,
+        -0.15f, 0.35f, 0.0f,
+        -0.05f, 0.35f, 0.0f,
 
-0.0f, 0.55f, 0.0f, // O
-0.0f, 0.3f, 0.0f,
-0.05f, 0.30f, 0.0f,
+        0.0f, 0.55f, 0.0f, // O
+        0.0f, 0.3f, 0.0f,
+        0.05f, 0.30f, 0.0f,
 
-0.05f, 0.3f, 0.0f,
-0.05f, 0.35f, 0.0f,
-0.15f, 0.35f, 0.0f,
+        0.05f, 0.3f, 0.0f,
+        0.05f, 0.35f, 0.0f,
+        0.15f, 0.35f, 0.0f,
 
-0.05f, 0.5f, 0.0f,
-0.05f, 0.55f, 0.0f,
-0.15f, 0.55f, 0.0f,
+        0.05f, 0.5f, 0.0f,
+        0.05f, 0.55f, 0.0f,
+        0.15f, 0.55f, 0.0f,
 
-0.15f, 0.55f, 0.0f,
-0.15f, 0.3f, 0.0f,
-0.20f, 0.30f, 0.0f
+        0.15f, 0.55f, 0.0f,
+        0.15f, 0.3f, 0.0f,
+        0.20f, 0.30f, 0.0f
     };
-    unsigned int VBOs[2], VAOs[2];
-    glGenVertexArrays(2, VAOs); // we can also generate multiple VAOs or buffers at the same time
-    glGenBuffers(2, VBOs);
-    // first triangle setup
-    // --------------------
+
+    float Triangle1[] = {
+        -0.90f, 0.15f, 0.0f, // T
+        -0.90f, 0.20f, 0.0f,
+        -0.65f, 0.20f, 0.0f,
+
+        -0.80f, 0.15f, 0.0f,
+        -0.80f, -0.05f, 0.0f,
+        -0.75f, -0.05f, 0.0f,
+
+        -0.60f, 0.2f, 0.0f, // R
+        -0.60f, -0.05f, 0.0f,
+        -0.55f, -0.05f, 0.0f,
+
+        -0.55f, 0.15f, 0.0f,
+        -0.55f, 0.20f, 0.0f,
+        -0.45f, 0.2f, 0.0f,
+
+        -0.50f, 0.10f, 0.0f,
+        -0.45f, 0.10f, 0.0f,
+        -0.50f, 0.15f, 0.0f,
+
+        -0.55f, 0.05f, 0.0f,
+        -0.55f, 0.10f, 0.0f,
+        -0.45f, 0.10f, 0.0f,
+
+        -0.55f, 0.05f, 0.0f,
+        -0.50f, -0.05f, 0.0f,
+        -0.45f, -0.05f, 0.0f,
+
+        -0.40f, 0.2f, 0.0f, //I
+        -0.40f, -0.05f, 0.0f,
+        -0.35f, -0.05f, 0.0f,
+
+        -0.15f, 0.15f, 0.0f, //A
+        -0.25f, -0.05f, 0.0f,
+        -0.15f, 0.20f, 0.0f,
+
+        -0.15f, 0.15f, 0.0f,
+        -0.05f, -0.05f, 0.0f,
+        -0.15f, 0.20f, 0.0f,
+
+        -0.20f, 0.05f, 0.0f,
+        -0.10f, 0.05f, 0.0f,
+        -0.15f, 0.075f, 0.0f,
+
+        0.05f, 0.2f, 0.0f, //N
+        0.05f, -0.05f, 0.0f,
+        0.10f, -0.05f, 0.0f,
+
+        0.20f, 0.2f, 0.0f,
+        0.20f, -0.05f, 0.0f,
+        0.25f, -0.05f, 0.0f,
+
+        0.10f, 0.2f, 0.0f,
+        0.15f, -0.05f, 0.0f,
+        0.20f, -0.05f, 0.0f,
+
+        0.30f, 0.2f, 0.0f, //G
+        0.30f, -0.05f, 0.0f,
+        0.35f, -0.05f, 0.0f,
+
+        0.35f, 0.15f, 0.0f,
+        0.35f, 0.20f, 0.0f,
+        0.50f, 0.20f, 0.0f,
+
+        0.35f, -0.05f, 0.0f,
+        0.35f, 0.0f, 0.0f,
+        0.50f, 0.0f, 0.0f,
+
+        0.40f, 0.05f, 0.0f,
+        0.40f, 0.10f, 0.0f,
+        0.50f, 0.10f, 0.0f,
+
+        0.50f, 0.0f, 0.0f,
+        0.45f, 0.05f, 0.0f,
+        0.45f, 0.0f, 0.0f,
+
+        0.55f, 0.2f, 0.0f, //L
+        0.55f, -0.05f, 0.0f,
+        0.60f, -0.05f, 0.0f,
+
+        0.60f, -0.05f, 0.0f,
+        0.60f, 0.0f, 0.0f,
+        0.70f, 0.0f, 0.0f,
+
+        0.75f, 0.2f, 0.0f, //E
+        0.75f, -0.05f, 0.0f,
+        0.80f, -0.05f, 0.0f,
+
+        0.80f, -0.05f, 0.0f,
+        0.80f, 0.0f, 0.0f,
+        0.90f, 0.0f, 0.0f,
+
+        0.80f, 0.05f, 0.0f,
+        0.80f, 0.10f, 0.0f,
+        0.90f, 0.10f, 0.0f,
+
+        0.80f, 0.15f, 0.0f,
+        0.80f, 0.20f, 0.0f,
+        0.90f, 0.20f, 0.0f,
+    };
+
+    float Triangle2[] = {
+        -0.90f, 0.15f, 0.0f, // T
+        -0.65f, 0.15f, 0.0f,
+        -0.65f, 0.20f, 0.0f,
+
+        -0.80f, 0.15f, 0.0f,
+        -0.75f, 0.15f, 0.0f,
+        -0.75f, -0.05f, 0.0f,
+
+        -0.60f, 0.2f, 0.0f, // R
+        -0.55f, 0.2f, 0.0f,
+        -0.55f, -0.05f, 0.0f,
+
+        -0.55f, 0.15f, 0.0f,
+        -0.45f, 0.15f, 0.0f,
+        -0.45f, 0.2f, 0.0f,
+
+        -0.45f, 0.15f, 0.0f,
+        -0.45f, 0.10f, 0.0f,
+        -0.50f, 0.15f, 0.0f,
+
+        -0.55f, 0.05f, 0.0f,
+        -0.45f, 0.05f, 0.0f,
+        -0.45f, 0.10f, 0.0f,
+
+        -0.40f, 0.2f, 0.0f, //I
+        -0.35f, 0.2f, 0.0f,
+        -0.35f, -0.05f, 0.0f,
+
+        -0.30f, -0.05f, 0.0f, //A
+        -0.25f, -0.05f, 0.0f,
+        -0.15f, 0.20f, 0.0f,
+
+        0.0f, -0.05f, 0.0f,
+        -0.05f, -0.05f, 0.0f,
+        -0.15f, 0.20f, 0.0f,
+
+        -0.20f, 0.05f, 0.0f,
+        -0.10f, 0.05f, 0.0f,
+        -0.15f, 0.075f, 0.0f,
+
+        0.05f, 0.2f, 0.0f, //N
+        0.10f, 0.2f, 0.0f,
+        0.10f, -0.05f, 0.0f,
+
+        0.20f, 0.2f, 0.0f,
+        0.25f, 0.2f, 0.0f,
+        0.25f, -0.05f, 0.0f,
+
+        0.10f, 0.2f, 0.0f,
+        0.15f, -0.05f, 0.0f,
+        0.20f, -0.05f, 0.0f,
+
+        0.30f, 0.2f, 0.0f, //G
+        0.35f, 0.2f, 0.0f,
+        0.35f, -0.05f, 0.0f,
+
+        0.35f, 0.15f, 0.0f,
+        0.50f, 0.15f, 0.0f,
+        0.50f, 0.20f, 0.0f,
+
+        0.35f, -0.05f, 0.0f,
+        0.50f, -0.05f, 0.0f,
+        0.50f, 0.0f, 0.0f,
+
+        0.40f, 0.05f, 0.0f,
+        0.50f, 0.05f, 0.0f,
+        0.50f, 0.10f, 0.0f,
+
+        0.45f, 0.05f, 0.0f,
+        0.50f, 0.0f, 0.0f,
+        0.50f, 0.05f, 0.0f,
+
+        0.55f, 0.2f, 0.0f, //L
+        0.60f, 0.2f, 0.0f,
+        0.60f, -0.05f, 0.0f,
+
+        0.60f, -0.05f, 0.0f,
+        0.70f, -0.05f, 0.0f,
+        0.70f, 0.0f, 0.0f,
+
+        0.75f, 0.2f, 0.0f, //E
+        0.80f, 0.2f, 0.0f,
+        0.80f, -0.05f, 0.0f,
+
+        0.80f, -0.05f, 0.0f,
+        0.90f, -0.05f, 0.0f,
+        0.90f, 0.0f, 0.0f,
+
+        0.80f, 0.05f, 0.0f,
+        0.90f, 0.05f, 0.0f,
+        0.90f, 0.10f, 0.0f,
+
+        0.80f, 0.15f, 0.0f,
+        0.90f, 0.15f, 0.0f,
+        0.90f, 0.20f, 0.0f,
+    };
+
+    // vertex buffers and attributes for each color
+    unsigned int VBOs[4], VAOs[4];
+    glGenVertexArrays(4, VAOs);
+    glGenBuffers(4, VBOs);
+
     glBindVertexArray(VAOs[0]);
     glBindBuffer(GL_ARRAY_BUFFER, VBOs[0]);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(firstTriangle), firstTriangle, GL_STATIC_DRAW);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);	// Vertex attributes stay the same
+    glBufferData(GL_ARRAY_BUFFER, sizeof(Hello1), Hello1, GL_STATIC_DRAW);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
-    // glBindVertexArray(0); // no need to unbind at all as we directly bind a different VAO the next few lines
-    // second triangle setup
-    // ---------------------
-    glBindVertexArray(VAOs[1]);	// note that we bind to a different VAO now
-    glBindBuffer(GL_ARRAY_BUFFER, VBOs[1]);	// and a different VBO
-    glBufferData(GL_ARRAY_BUFFER, sizeof(secondTriangle), secondTriangle, GL_STATIC_DRAW);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0); // because the vertex data is tightly packed we can also specify 0 as the vertex attribute's stride to let OpenGL figure it out
+
+    glBindVertexArray(VAOs[1]);
+    glBindBuffer(GL_ARRAY_BUFFER, VBOs[1]);	
+    glBufferData(GL_ARRAY_BUFFER, sizeof(Hello2), Hello2, GL_STATIC_DRAW);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
     glEnableVertexAttribArray(0);
-    // glBindVertexArray(0); // not really necessary as well, but beware of calls that could affect VAOs while this one is bound (like binding element buffer objects, or enabling/disabling vertex attributes)
 
+    glBindVertexArray(VAOs[2]);
+    glBindBuffer(GL_ARRAY_BUFFER, VBOs[2]);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(Triangle1), Triangle1, GL_STATIC_DRAW);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
 
-    // uncomment this call to draw in wireframe polygons.
-    //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    glBindVertexArray(VAOs[3]);
+    glBindBuffer(GL_ARRAY_BUFFER, VBOs[3]);	
+    glBufferData(GL_ARRAY_BUFFER, sizeof(Triangle2), Triangle2, GL_STATIC_DRAW);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+    glEnableVertexAttribArray(0);
 
-    // render loop
-    // -----------
     while (!glfwWindowShouldClose(window))
     {
         // input
-        // -----
         processInput(window);
 
         // render
-        // ------
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        glClearColor(0.1054f, 0.1210f, 0.1992f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        // now when we draw the triangle we first use the vertex and orange fragment shader from the first program
-        glUseProgram(shaderProgramOrange);
-        // draw the first triangle using the data from our first VAO
+        
+        glUseProgram(shaderProgram1);
         glBindVertexArray(VAOs[0]);
-        glDrawArrays(GL_TRIANGLES, 0, 18);	// this call should output an orange triangle
-        // then we draw the second triangle using the data from the second VAO
-        // when we draw the second triangle we want to use a different shader program so we switch to the shader program with our yellow fragment shader.
-        glUseProgram(shaderProgramYellow);
-        glBindVertexArray(VAOs[1]);
-        glDrawArrays(GL_TRIANGLES, 0, 45);	// this call should output a yellow triangle
+        glDrawArrays(GL_TRIANGLES, 0, 81);
 
-        // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
-        // -------------------------------------------------------------------------------
+        glUseProgram(shaderProgram2);
+        glBindVertexArray(VAOs[1]);
+        glDrawArrays(GL_TRIANGLES, 0, 81);
+
+        glUseProgram(shaderProgram3);
+        glBindVertexArray(VAOs[2]);
+        glDrawArrays(GL_TRIANGLES, 0, 81);
+
+        glUseProgram(shaderProgram4);
+        glBindVertexArray(VAOs[3]);
+        glDrawArrays(GL_TRIANGLES, 0, 81);
+
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
-
-    // optional: de-allocate all resources once they've outlived their purpose:
-    // ------------------------------------------------------------------------
+    // delete programs and terminate
     glDeleteVertexArrays(2, VAOs);
     glDeleteBuffers(2, VBOs);
-    glDeleteProgram(shaderProgramOrange);
-    glDeleteProgram(shaderProgramYellow);
+    glDeleteProgram(shaderProgram1);
+    glDeleteProgram(shaderProgram2);
+    glDeleteProgram(shaderProgram3);
+    glDeleteProgram(shaderProgram4);
 
-    // glfw: terminate, clearing all previously allocated GLFW resources.
-    // ------------------------------------------------------------------
     glfwTerminate();
     return 0;
 }
 
 // process all input: query GLFW whether relevant keys are pressed/released this frame and react accordingly
-// ---------------------------------------------------------------------------------------------------------
 void processInput(GLFWwindow* window)
 {
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
@@ -245,10 +497,7 @@ void processInput(GLFWwindow* window)
 }
 
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes
-// ---------------------------------------------------------------------------------------------
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
-    // make sure the viewport matches the new window dimensions; note that width and 
-    // height will be significantly larger than specified on retina displays.
     glViewport(0, 0, width, height);
 }
