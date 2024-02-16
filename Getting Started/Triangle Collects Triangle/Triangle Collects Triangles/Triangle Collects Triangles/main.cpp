@@ -220,18 +220,9 @@ bool collisionCheck(float triangle1[], float triangle2[]) {
                 std::cout << triangle2[j * 3] << std::endl;
                 std::cout << triangle2[3 + j * 3] << std::endl;
                 
-                if ((std::min(triangle2[j * 3], triangle2[j * 3 + 3]) <= x <= std::max(triangle2[j * 3], triangle2[j * 3 + 3])) && 
-                    (std::min(triangle2[1 + (j * 3)], triangle2[4 + (j * 3)]) <= y <= std::max(triangle2[1 + (j * 3)], triangle2[4 + (j * 3)]))) {
-                    
-                    
-                    
-                    //return true;
-                }
+              
                 
             }
-
-            
-
         }
     }
 
