@@ -19,13 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\headers and libraries\imgui files\imgui.cpp" />
-    <ClCompile Include="..\..\..\..\..\headers and libraries\imgui files\imgui_demo.cpp" />
-    <ClCompile Include="..\..\..\..\..\headers and libraries\imgui files\imgui_draw.cpp" />
-    <ClCompile Include="..\..\..\..\..\headers and libraries\imgui files\imgui_impl_glfw.cpp" />
-    <ClCompile Include="..\..\..\..\..\headers and libraries\imgui files\imgui_impl_opengl3.cpp" />
-    <ClCompile Include="..\..\..\..\..\headers and libraries\imgui files\imgui_tables.cpp" />
-    <ClCompile Include="..\..\..\..\..\headers and libraries\imgui files\imgui_widgets.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Visual Studio 2022\imgui-and-opengl-stuffs\imgui\imgui.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Visual Studio 2022\imgui-and-opengl-stuffs\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Visual Studio 2022\imgui-and-opengl-stuffs\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Visual Studio 2022\imgui-and-opengl-stuffs\imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Visual Studio 2022\imgui-and-opengl-stuffs\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Visual Studio 2022\imgui-and-opengl-stuffs\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Visual Studio 2022\imgui-and-opengl-stuffs\imgui\imgui_widgets.cpp" />
     <ClCompile Include="..\..\..\..\glad.c" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -82,12 +82,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\Owner\Documents\GitHub\headers and libraries\include;C:\Users\wcwal\Documents\GitHub\openglwtfareyou\libs and includes\includes;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Owner\Documents\GitHub\headers and libraries\library;C:\Users\wcwal\Documents\GitHub\openglwtfareyou\libs and includes\libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\wcwal\Documents\Visual Studio 2022\imgui-and-opengl-stuffs\includes;C:\Users\Owner\Documents\GitHub\headers and libraries\include;C:\Users\wcwal\Documents\GitHub\openglwtfareyou\libs and includes\includes;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\wcwal\Documents\Visual Studio 2022\imgui-and-opengl-stuffs\libs;C:\Users\Owner\Documents\GitHub\headers and libraries\library;C:\Users\wcwal\Documents\GitHub\openglwtfareyou\libs and includes\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\Users\wcwal\Documents\GitHub\openglwtfareyou\libs and includes\includes;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\wcwal\Documents\GitHub\openglwtfareyou\libs and includes\libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\wcwal\Documents\Visual Studio 2022\imgui-and-opengl-stuffs\includes;C:\Users\wcwal\Documents\GitHub\openglwtfareyou\libs and includes\includes;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\wcwal\Documents\Visual Studio 2022\imgui-and-opengl-stuffs\libs;C:\Users\wcwal\Documents\GitHub\openglwtfareyou\libs and includes\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
