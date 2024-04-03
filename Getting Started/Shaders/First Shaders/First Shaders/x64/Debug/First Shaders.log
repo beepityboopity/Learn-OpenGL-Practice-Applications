@@ -1,2 +1,3 @@
 ﻿  main.cpp
+C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Shaders\First Shaders\First Shaders\main.cpp(62,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   First Shaders.vcxproj -> C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Shaders\First Shaders\x64\Debug\First Shaders.exe

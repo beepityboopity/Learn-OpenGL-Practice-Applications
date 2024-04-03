@@ -19,13 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\Visual Studio 2022\imgui-and-opengl-stuffs\imgui\imgui.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Visual Studio 2022\imgui-and-opengl-stuffs\imgui\imgui_demo.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Visual Studio 2022\imgui-and-opengl-stuffs\imgui\imgui_draw.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Visual Studio 2022\imgui-and-opengl-stuffs\imgui\imgui_impl_glfw.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Visual Studio 2022\imgui-and-opengl-stuffs\imgui\imgui_impl_opengl3.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Visual Studio 2022\imgui-and-opengl-stuffs\imgui\imgui_tables.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Visual Studio 2022\imgui-and-opengl-stuffs\imgui\imgui_widgets.cpp" />
     <ClCompile Include="..\..\..\..\glad.c" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
