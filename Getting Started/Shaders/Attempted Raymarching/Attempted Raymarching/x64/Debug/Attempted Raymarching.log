@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Shaders\Attempted Raymarching\Attempted Raymarching\main.cpp(140,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Shaders\Attempted Raymarching\Attempted Raymarching\main.cpp(199,28): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Shaders\Attempted Raymarching\Attempted Raymarching\main.cpp(205,25): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+  Attempted Raymarching.vcxproj -> C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Shaders\Attempted Raymarching\x64\Debug\Attempted Raymarching.exe

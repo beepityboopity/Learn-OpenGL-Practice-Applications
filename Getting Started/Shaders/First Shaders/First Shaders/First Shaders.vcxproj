@@ -75,8 +75,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\wcwal\Documents\Visual Studio 2022\imgui-and-opengl-stuffs\includes;C:\Users\Owner\Documents\GitHub\headers and libraries\include;C:\Users\wcwal\Documents\GitHub\openglwtfareyou\libs and includes\includes;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\wcwal\Documents\Visual Studio 2022\imgui-and-opengl-stuffs\libs;C:\Users\Owner\Documents\GitHub\headers and libraries\library;C:\Users\wcwal\Documents\GitHub\openglwtfareyou\libs and includes\libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Christianna\Documents\Visual Studio 2022\imgui and glfw\includes;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Christianna\Documents\Visual Studio 2022\imgui and glfw\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>C:\Users\wcwal\Documents\Visual Studio 2022\imgui-and-opengl-stuffs\includes;C:\Users\wcwal\Documents\GitHub\openglwtfareyou\libs and includes\includes;$(IncludePath)</IncludePath>

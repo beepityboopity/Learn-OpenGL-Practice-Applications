@@ -53,37 +53,58 @@ int main()
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
     glUseProgram(shaderProgram);
-    unsigned int VBO, VAO;
-    glGenVertexArrays(1, &VAO);
-    glGenBuffers(1, &VBO);
+
+    unsigned int VBO[2], VAO[2];
+    glGenVertexArrays(2, VAO);
+    glGenBuffers(2, VBO);
 
     while (!glfwWindowShouldClose(window))
     {
         float timeValue = 0.5 * glfwGetTime();
         float vertices[] = {
-            -0.75f, -0.75f, 0.0f, (sin(timeValue + 4.0f) * 2.0f) + 0.5f, (sin(timeValue + 2.0f) * 2.0f) + 0.5f, (sin(timeValue) * 2.0f) + 0.5f, // left  
-             0.75f, -0.75f, 0.0f, (sin(timeValue + 2.0f) * 2.0f) + 0.5f, (sin(timeValue) * 2.0f) + 0.5f, (sin(timeValue - 2.0f) * 2.0f) + 0.5f,// right 
-             0.0f,  0.75f, 0.0f, (sin(timeValue) * 2.0f) + 0.5f, (sin(timeValue - 2.0f) * 2.0f) + 0.5f, (sin(timeValue - 4.0f) * 2.0f) + 0.5f// top   
+            -1.0f, -1.0f, 0.0f, (sin(timeValue + 4.0f) * 2.0f) + 0.5f, (sin(timeValue + 2.0f) * 2.0f) + 0.5f, (sin(timeValue) * 2.0f) + 0.5f, // left  
+             1.0f, -1.0f, 0.0f, (sin(timeValue + 2.0f) * 2.0f) + 0.5f, (sin(timeValue) * 2.0f) + 0.5f, (sin(timeValue - 2.0f) * 2.0f) + 0.5f,// right 
+             -1.0f,  1.0f, 0.0f, (sin(timeValue) * 2.0f) + 0.5f, (sin(timeValue - 2.0f) * 2.0f) + 0.5f, (sin(timeValue - 4.0f) * 2.0f) + 0.5f// top   
         };
 
-        glBindVertexArray(VAO);
-        glBindBuffer(GL_ARRAY_BUFFER, VBO);
+        float vertices2[] = {
+            1.0f, 1.0f, 0.0f, (sin(timeValue + 4.0f) * 2.0f) + 0.5f, (sin(timeValue + 2.0f) * 2.0f) + 0.5f, (sin(timeValue) * 2.0f) + 0.5f, // left  
+             1.0f, -1.0f, 0.0f, (sin(timeValue + 2.0f) * 2.0f) + 0.5f, (sin(timeValue) * 2.0f) + 0.5f, (sin(timeValue - 2.0f) * 2.0f) + 0.5f,// right 
+             -1.0f,  1.0f, 0.0f, (sin(timeValue) * 2.0f) + 0.5f, (sin(timeValue - 2.0f) * 2.0f) + 0.5f, (sin(timeValue - 4.0f) * 2.0f) + 0.5f// top   
+        };
+
+        processInput(window);
+        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
+
+        glBindVertexArray(VAO[0]);
+        glBindBuffer(GL_ARRAY_BUFFER, VBO[0]);
         glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
         glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
         glEnableVertexAttribArray(0);
         glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
         glEnableVertexAttribArray(1);
 
-        processInput(window);
-        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
+        glDrawArrays(GL_TRIANGLES, 0, 3);
+
+        glBindVertexArray(VAO[1]);
+        glBindBuffer(GL_ARRAY_BUFFER, VBO[1]);
+        glBufferData(GL_ARRAY_BUFFER, sizeof(vertices2), vertices2, GL_STATIC_DRAW);
+        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
+        glEnableVertexAttribArray(0);
+        glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+        glEnableVertexAttribArray(1);
+
+        
+
+        
         glDrawArrays(GL_TRIANGLES, 0, 3);
 
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
-    glDeleteVertexArrays(1, &VAO);
-    glDeleteBuffers(1, &VBO);
+    glDeleteVertexArrays(1, VAO);
+    glDeleteBuffers(1, VBO);
     glDeleteProgram(shaderProgram);
     glfwTerminate();
     return 0;
