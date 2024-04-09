@@ -71,8 +71,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\Christianna\Documents\Visual Studio 2022\imgui and glfw\includes;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Christianna\Documents\Visual Studio 2022\imgui and glfw\libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\wcwal\Documents\Visual Studio 2022\imgui-and-opengl-stuffs\includes;C:\Users\Christianna\Documents\Visual Studio 2022\imgui and glfw\includes;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\wcwal\Documents\Visual Studio 2022\imgui-and-opengl-stuffs\libs;C:\Users\Christianna\Documents\Visual Studio 2022\imgui and glfw\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\wcwal\Documents\Visual Studio 2022\imgui-and-opengl-stuffs\includes;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>C:\Users\wcwal\Documents\Visual Studio 2022\imgui-and-opengl-stuffs\libs;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -132,7 +136,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\Visual Studio 2022\imgui and glfw\glad\src\glad.c" />
+    <ClCompile Include="..\..\..\..\..\..\Visual Studio 2022\imgui-and-opengl-stuffs\glad\src\glad.c" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

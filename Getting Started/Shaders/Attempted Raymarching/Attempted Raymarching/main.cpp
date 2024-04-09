@@ -66,7 +66,7 @@ const char* fragmentShaderSource = "#version 330 core\n"
 
 "float map(vec3 p){\n"
     "vec3 spherePos = vec3(sin(iTime) * 2.0, 0, 0);\n"
-    "float sphere = sdSphere(p - spherePos, 1.0);\n"
+    "float sphere = sdSphere(p - spherePos, 0.5);\n"
 
     "float box = sdBox(p * 4.0, vec3(0.75)) / 4.0;\n"
     "float ground = p.y + 0.75;\n"
@@ -77,7 +77,7 @@ const char* fragmentShaderSource = "#version 330 core\n"
 "void main(){\n" // main
 
     "vec3 ro = vec3(0, 0, -2);\n"
-    "vec3 rd = normalize(vec3(positionVec, 0.5));\n"
+    "vec3 rd = normalize(vec3(positionVec, 1.0));\n"
     "vec3 col = vec3(0);\n"
 
     "float t = 0.0;\n"
@@ -95,7 +95,7 @@ const char* fragmentShaderSource = "#version 330 core\n"
 
     "col = vec3(t * 0.2);\n"
 
-    "FragColor = vec4(col.x, 0.0, col.z, 1.0f);\n"
+    "FragColor = vec4(col, 1.0f);\n"
 
 "}\n\0";
 
