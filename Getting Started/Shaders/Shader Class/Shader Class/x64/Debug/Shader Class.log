@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Shaders\Shader Class\Shader Class\main.cpp(34,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Shader Class.vcxproj -> C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Shaders\Shader Class\x64\Debug\Shader Class.exe
