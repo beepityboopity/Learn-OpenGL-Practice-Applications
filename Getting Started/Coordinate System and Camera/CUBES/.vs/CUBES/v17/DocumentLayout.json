@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Coordinate System and Camera\\CUBES\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{47F8E496-9D07-4495-B57E-40B5CBCBA8A9}|CUBES\\CUBES.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Coordinate System and Camera\\CUBES\\CUBES\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{47F8E496-9D07-4495-B57E-40B5CBCBA8A9}|CUBES\\CUBES.vcxproj|solutionrelative:CUBES\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F8E496-9D07-4495-B57E-40B5CBCBA8A9}|CUBES\\CUBES.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Coordinate System and Camera\\CUBES\\CUBES\\frag.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{47F8E496-9D07-4495-B57E-40B5CBCBA8A9}|CUBES\\CUBES.vcxproj|solutionrelative:CUBES\\frag.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47F8E496-9D07-4495-B57E-40B5CBCBA8A9}|CUBES\\CUBES.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Coordinate System and Camera\\CUBES\\CUBES\\vertex.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{47F8E496-9D07-4495-B57E-40B5CBCBA8A9}|CUBES\\CUBES.vcxproj|solutionrelative:CUBES\\vertex.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frag.fs",
+              "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Coordinate System and Camera\\CUBES\\CUBES\\frag.fs",
+              "RelativeDocumentMoniker": "CUBES\\frag.fs",
+              "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Coordinate System and Camera\\CUBES\\CUBES\\frag.fs",
+              "RelativeToolTip": "CUBES\\frag.fs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-30T14:51:14.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "vertex.vs",
+              "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Coordinate System and Camera\\CUBES\\CUBES\\vertex.vs",
+              "RelativeDocumentMoniker": "CUBES\\vertex.vs",
+              "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Coordinate System and Camera\\CUBES\\CUBES\\vertex.vs",
+              "RelativeToolTip": "CUBES\\vertex.vs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-30T14:51:15.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Coordinate System and Camera\\CUBES\\CUBES\\main.cpp",
+              "RelativeDocumentMoniker": "CUBES\\main.cpp",
+              "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Coordinate System and Camera\\CUBES\\CUBES\\main.cpp",
+              "RelativeToolTip": "CUBES\\main.cpp",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAACAAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-30T14:48:42.141Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

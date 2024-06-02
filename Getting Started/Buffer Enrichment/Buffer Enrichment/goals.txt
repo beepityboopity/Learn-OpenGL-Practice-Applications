@@ -1,0 +1,2 @@
+comment every line of code and explain what tf it does
+review hello triangle section

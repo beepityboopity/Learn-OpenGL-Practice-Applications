@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Buffer Enrichment\Buffer Enrichment\main.cpp(61,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Buffer Enrichment.vcxproj -> C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Buffer Enrichment\x64\Debug\Buffer Enrichment.exe
