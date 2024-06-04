@@ -71,7 +71,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\Christianna\Documents\Visual Studio 2022\simple shader setup;C:\Users\Christianna\Documents\Visual Studio 2022\imgui and glfw\includes;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Christianna\Documents\Visual Studio 2022\glm;C:\Users\Christianna\Documents\Visual Studio 2022\simple shader setup;C:\Users\Christianna\Documents\Visual Studio 2022\imgui and glfw\includes;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\Christianna\Documents\Visual Studio 2022\imgui and glfw\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

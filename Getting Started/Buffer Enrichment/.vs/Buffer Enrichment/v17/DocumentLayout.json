@@ -7,15 +7,15 @@
       "RelativeMoniker": "D:0:0:{A8743C97-655B-4308-8374-CB364F997A2F}|Buffer Enrichment\\Buffer Enrichment.vcxproj|solutionrelative:Buffer Enrichment\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A8743C97-655B-4308-8374-CB364F997A2F}|Buffer Enrichment\\Buffer Enrichment.vcxproj|C:\\Users\\Christianna\\Documents\\Visual Studio 2022\\simple shader setup\\shader_class.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A8743C97-655B-4308-8374-CB364F997A2F}|Buffer Enrichment\\Buffer Enrichment.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Buffer Enrichment\\Buffer Enrichment\\vertex_shader.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A8743C97-655B-4308-8374-CB364F997A2F}|Buffer Enrichment\\Buffer Enrichment.vcxproj|solutionrelative:Buffer Enrichment\\vertex_shader.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8743C97-655B-4308-8374-CB364F997A2F}|Buffer Enrichment\\Buffer Enrichment.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Buffer Enrichment\\Buffer Enrichment\\fragment_shader.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A8743C97-655B-4308-8374-CB364F997A2F}|Buffer Enrichment\\Buffer Enrichment.vcxproj|solutionrelative:Buffer Enrichment\\fragment_shader.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8743C97-655B-4308-8374-CB364F997A2F}|Buffer Enrichment\\Buffer Enrichment.vcxproj|C:\\Users\\Christianna\\Documents\\Visual Studio 2022\\simple shader setup\\shader_class.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8743C97-655B-4308-8374-CB364F997A2F}|Buffer Enrichment\\Buffer Enrichment.vcxproj|C:\\Users\\Christianna\\Documents\\Visual Studio 2022\\simple shader setup\\shader_class.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -36,7 +36,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "vertex_shader.vs",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Buffer Enrichment\\Buffer Enrichment\\vertex_shader.vs",
               "RelativeDocumentMoniker": "Buffer Enrichment\\vertex_shader.vs",
@@ -44,12 +44,11 @@
               "RelativeToolTip": "Buffer Enrichment\\vertex_shader.vs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-28T19:43:09.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T19:43:09.202Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "fragment_shader.fs",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Buffer Enrichment\\Buffer Enrichment\\fragment_shader.fs",
               "RelativeDocumentMoniker": "Buffer Enrichment\\fragment_shader.fs",
@@ -57,8 +56,7 @@
               "RelativeToolTip": "Buffer Enrichment\\fragment_shader.fs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-28T19:42:57.594Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T19:42:57.594Z"
             },
             {
               "$type": "Document",
@@ -70,8 +68,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\Visual Studio 2022\\simple shader setup\\shader_class.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-28T19:36:52.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T19:36:52.693Z"
             },
             {
               "$type": "Document",
@@ -83,18 +80,17 @@
               "RelativeToolTip": "Buffer Enrichment\\goals.txt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-05-28T18:52:33.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T18:52:33.767Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "shader_class.h",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\Visual Studio 2022\\simple shader setup\\shader_class.h",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Visual Studio 2022\\simple shader setup\\shader_class.h",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\Visual Studio 2022\\simple shader setup\\shader_class.h",
               "RelativeToolTip": "..\\..\\..\\..\\Visual Studio 2022\\simple shader setup\\shader_class.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAHAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-26T19:31:03.604Z",
               "EditorCaption": ""
@@ -107,7 +103,7 @@
               "RelativeDocumentMoniker": "Buffer Enrichment\\main.cpp",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Buffer Enrichment\\Buffer Enrichment\\main.cpp",
               "RelativeToolTip": "Buffer Enrichment\\main.cpp",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAAHAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAADgAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-26T19:26:51.212Z",
               "EditorCaption": ""
