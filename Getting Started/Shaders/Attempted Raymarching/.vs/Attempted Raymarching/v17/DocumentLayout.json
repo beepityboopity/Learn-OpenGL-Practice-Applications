@@ -34,8 +34,7 @@
               "RelativeToolTip": "Attempted Raymarching\\vertexShader.vs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-06-24T14:42:46.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-24T14:42:46.935Z"
             },
             {
               "$type": "Document",
@@ -45,7 +44,7 @@
               "RelativeDocumentMoniker": "Attempted Raymarching\\fragShader.fs",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Shaders\\Attempted Raymarching\\Attempted Raymarching\\fragShader.fs",
               "RelativeToolTip": "Attempted Raymarching\\fragShader.fs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAAAHYAAAAbAAAA",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAAAGAAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-06-24T14:42:35.971Z",
               "EditorCaption": ""
@@ -58,7 +57,7 @@
               "RelativeDocumentMoniker": "Attempted Raymarching\\main.cpp",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Shaders\\Attempted Raymarching\\Attempted Raymarching\\main.cpp",
               "RelativeToolTip": "Attempted Raymarching\\main.cpp",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAD8AAAAIAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAEsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-07T21:26:57.52Z",
               "EditorCaption": ""

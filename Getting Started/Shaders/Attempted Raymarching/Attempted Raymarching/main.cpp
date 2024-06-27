@@ -54,16 +54,25 @@ int main()
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
     glEnableVertexAttribArray(0);
 
-    double mouseX;
-    double mouseY;
+    float directionH = 0;
+    float directionV = 0;
 
     while (!glfwWindowShouldClose(window))
     {
         float timeValue = glfwGetTime();
         myShader.setFloat("iTime", timeValue);
-        
-        glfwGetCursorPos(window, &mouseX, &mouseY);
-        myShader.setVec2("mousePos", mouseX, mouseY);
+
+        if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS)
+            directionH -= 0.01;
+        if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS)
+            directionH += 0.01;
+        if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
+            directionV -= 0.01;
+        if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
+            directionV += 0.01;
+
+        myShader.setFloat("camHorizontal", directionH);
+        myShader.setFloat("camVertical", directionV);
 
         processInput(window);
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);

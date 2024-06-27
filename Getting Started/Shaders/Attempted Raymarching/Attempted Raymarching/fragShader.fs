@@ -4,6 +4,8 @@ out vec4 FragColor;
 
 in vec2 positionVec;
 uniform float iTime;
+uniform float camHorizontal;
+uniform float camVertical;
 uniform vec2 mousePos;
 
 float sdSphere(vec3 p, float s)
@@ -87,30 +89,46 @@ vec3 rodRotation(vec3 p, vec3 axis, float angle)
     return mix(dot(axis, p) * axis, p, cos(angle)) + cross(axis, p) * sin(angle);
 }
 
+vec3 palette(float t)
+{
+    vec3 a = vec3(1.0);
+    vec3 b = vec3(1.0);
+    vec3 c = vec3(1.0);
+    vec3 d = vec3(0.5, 0.5, 0.5);
+
+    return a + b*cos(6.28318*(c*t+d));
+}
+
 float map(vec3 p)
 {
     vec3 spherePos = vec3(sin(iTime) * 3.0, 0, 0);
     float sphere = sdSphere(p - spherePos, 0.75);
 
     vec3 q = fract(p) - 0.5; // copy for rotation
-    //q.xz *= rot2D(iTime);
+    //q.xz *= rot2D(rotationDirection);
 
     float box = sdBox(q, vec3(0.1));
     float ground = p.y + 0.75;
 
-    return smin(ground, smin(sphere, box, 1.0), 1.0);
+    return min(sphere, box);
 }
 
 void main()
 { // main
     vec2 m = normalize(mousePos) * 4.0;
-    vec3 ro = vec3(0, 0, -5);
+    vec3 ro = vec3(0, 0, -3);
     vec3 rd = normalize(vec3(positionVec, 1.0));
     vec3 col = vec3(0);
 
+    ro.yz *= rot2D(camVertical);
+    rd.yz *= rot2D(camVertical);
+    ro.xz *= rot2D(camHorizontal);
+    rd.xz *= rot2D(camHorizontal);
+    
+
     float t = 0.0;
 
-    for (int i = 0; i < 80; i++)
+    for (int i = 0; i < 50; i++)
     {
         vec3 p = ro + rd * t;
         float d = map(p);
@@ -119,7 +137,7 @@ void main()
         col = vec3(i)/80.0;
         if (d < 0.001 || t > 100.0) break;
     }
-
-    col = vec3(t * 0.2);
+    col = vec3(t * 0.01);
+    col = palette(t * 0.04);
     FragColor = vec4(col, 1.0f);
 };
