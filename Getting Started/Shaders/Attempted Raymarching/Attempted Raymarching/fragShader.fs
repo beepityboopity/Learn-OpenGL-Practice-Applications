@@ -8,16 +8,31 @@ uniform float camHorizontal;
 uniform float camVertical;
 uniform vec2 mousePos;
 
-float sdSphere(vec3 p, float s)
-{ // sine distance sphere
+float Sphere(vec3 p, float s)
+{ // signed distance sphere
     return length(p) - s;
 }
 
-float sdBox(vec3 p, vec3 b)
-{ // sine distance box
+float Box(vec3 p, vec3 b)
+{ // signed distance box
     vec3 q = abs(p) - b;
     return length(max(q, 0.0)) + min(max(q.x, max(q.y, q.z)), 0.0);
 }
+
+float Torus(vec3 p, vec2 t) // t.x = diameter // t.y = ring thiccness
+{ // signed distance donut
+    vec2 q = vec2(length(p.xz) - t.x, p.y);
+    return length(q) - t.y;
+}
+
+float cappedTorus(vec3 p , vec2 sc, float ra, float rb) // i dont know how this works
+// sc ranges from -1 to 1, ra and rb are thiccness related
+{
+    p.x = abs(p.x);
+    float k = (sc.y * p.x > sc.x * p.y) ? dot(p.xy, sc) : length(p.xy);
+    return sqrt(dot(p, p) + ra * ra - 2.0 * ra * k) - rb;
+}
+
 
 float opUnion(float d1, float d2)
 { // union operator
@@ -91,26 +106,23 @@ vec3 rodRotation(vec3 p, vec3 axis, float angle)
 
 vec3 palette(float t)
 {
-    vec3 a = vec3(1.0);
-    vec3 b = vec3(1.0);
+    vec3 a = vec3(0.5);
+    vec3 b = vec3(0.5);
     vec3 c = vec3(1.0);
-    vec3 d = vec3(0.5, 0.5, 0.5);
+    vec3 d = vec3(0.9, 0.5, 0.6);
 
-    return a + b*cos(6.28318*(c*t+d));
+    return a + b*cos(7.28318*(c*t+d));
 }
 
 float map(vec3 p)
 {
-    vec3 spherePos = vec3(sin(iTime) * 3.0, 0, 0);
-    float sphere = sdSphere(p - spherePos, 0.75);
 
     vec3 q = fract(p) - 0.5; // copy for rotation
-    //q.xz *= rot2D(rotationDirection);
+    float box = Box(p, vec3(0.1));
+    float torus = Torus(q, vec2(0.1, 0.05));
+    float capTorus = cappedTorus(p, vec2(sin(iTime), cos(iTime)), 1.0, 0.5);
 
-    float box = sdBox(q, vec3(0.1));
-    float ground = p.y + 0.75;
-
-    return min(sphere, box);
+    return capTorus;
 }
 
 void main()
@@ -137,7 +149,7 @@ void main()
         col = vec3(i)/80.0;
         if (d < 0.001 || t > 100.0) break;
     }
-    col = vec3(t * 0.01);
-    col = palette(t * 0.04);
+    col = vec3(t * 0.2);
+    //col = palette(t * 0.04);
     FragColor = vec4(col, 1.0f);
 };
