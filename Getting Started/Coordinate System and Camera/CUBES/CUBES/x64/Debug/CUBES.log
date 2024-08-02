@@ -1,4 +1,8 @@
-﻿  main.cpp
+﻿  glad.c
+  shader_class.cpp
+  stbi_load.cpp
+  main.cpp
 C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Coordinate System and Camera\CUBES\CUBES\main.cpp(143,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Coordinate System and Camera\CUBES\CUBES\main.cpp(144,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
   CUBES.vcxproj -> C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Coordinate System and Camera\CUBES\x64\Debug\CUBES.exe

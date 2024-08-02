@@ -1,8 +1,8 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <stb_image.h>
+#include <texture setup/stb_image.h>
 #include <iostream>
-#include <shader_class.h>
+#include <shaders/shader_class.h>
 
 void frameCallback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);

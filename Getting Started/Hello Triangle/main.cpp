@@ -1,45 +1,10 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include <shaders/shader_class.h>
 #include <iostream>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
-
-const char* vertexShaderSource = "#version 330 core\n"
-"layout (location = 0) in vec3 aPos;\n"
-"void main()\n"
-"{\n"
-"   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
-"}\0";
-
-const char* fragmentShader1Source = "#version 330 core\n"
-"out vec4 FragColor;\n"
-"void main()\n"
-"{\n"
-"   FragColor = vec4(0.2656f, 0.2226f, 0.3398f, 1.0f);\n"
-"}\n\0";
-
-const char* fragmentShader2Source = "#version 330 core\n"
-"out vec4 FragColor;\n"
-"void main()\n"
-"{\n"
-"   FragColor = vec4(0.5078f, 0.3516f, 0.5352f, 1.0f);\n"
-"}\n\0";
-
-const char* fragmentShader3Source = "#version 330 core\n"
-"out vec4 FragColor;\n"
-"void main()\n"
-"{\n"
-"   FragColor = vec4(0.7343f, 0.4804f, 0.6172f, 1.0f);\n"
-"}\n\0";
-
-const char* fragmentShader4Source = "#version 330 core\n"
-"out vec4 FragColor;\n"
-"void main()\n"
-"{\n"
-"   FragColor = vec4(0.9297f, 0.6094f, 0.6406f, 1.0f);\n"
-"}\n\0";
-
 
 int main()
 {
@@ -51,49 +16,11 @@ int main()
     GLFWwindow* window = glfwCreateWindow(800, 600, "Hello Triangle", NULL, NULL);
     glfwMakeContextCurrent(window);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
-    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
-    {
-        std::cout << "Failed to initialize GLAD" << std::endl;
-        return -1;
-    }
+    gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 
-
-    // create vertex shader and four fragment shaders
-    unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER);
-    unsigned int fragmentShader1 = glCreateShader(GL_FRAGMENT_SHADER);
-    unsigned int fragmentShader2 = glCreateShader(GL_FRAGMENT_SHADER);
-    unsigned int fragmentShader3 = glCreateShader(GL_FRAGMENT_SHADER);
-    unsigned int fragmentShader4 = glCreateShader(GL_FRAGMENT_SHADER);
-
-    unsigned int shaderProgram1 = glCreateProgram();
-    unsigned int shaderProgram2 = glCreateProgram();
-    unsigned int shaderProgram3 = glCreateProgram();
-    unsigned int shaderProgram4 = glCreateProgram();
-
-    glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
-    glCompileShader(vertexShader);
-
-    glShaderSource(fragmentShader1, 1, &fragmentShader1Source, NULL);
-    glCompileShader(fragmentShader1);
-    glShaderSource(fragmentShader2, 1, &fragmentShader2Source, NULL);
-    glCompileShader(fragmentShader2);
-    glShaderSource(fragmentShader3, 1, &fragmentShader3Source, NULL);
-    glCompileShader(fragmentShader3);
-    glShaderSource(fragmentShader4, 1, &fragmentShader4Source, NULL);
-    glCompileShader(fragmentShader4);
-
-    glAttachShader(shaderProgram1, vertexShader);
-    glAttachShader(shaderProgram1, fragmentShader1);
-    glLinkProgram(shaderProgram1);
-    glAttachShader(shaderProgram2, vertexShader);
-    glAttachShader(shaderProgram2, fragmentShader2);
-    glLinkProgram(shaderProgram2);
-    glAttachShader(shaderProgram3, vertexShader);
-    glAttachShader(shaderProgram3, fragmentShader3);
-    glLinkProgram(shaderProgram3);
-    glAttachShader(shaderProgram4, vertexShader);
-    glAttachShader(shaderProgram4, fragmentShader4);
-    glLinkProgram(shaderProgram4);
+    // shader
+    Shader helloShader("vertex.vs", "fragment.fs");
+    helloShader.use();
 
     //triangle vertices grouped by color
     float Hello1[] = {
@@ -218,7 +145,6 @@ int main()
         0.15f, 0.3f, 0.0f,
         0.20f, 0.30f, 0.0f
     };
-
     float Triangle1[] = {
         -0.90f, 0.15f, 0.0f, // T
         -0.90f, 0.20f, 0.0f,
@@ -320,7 +246,6 @@ int main()
         0.80f, 0.20f, 0.0f,
         0.90f, 0.20f, 0.0f,
     };
-
     float Triangle2[] = {
         -0.90f, 0.15f, 0.0f, // T
         -0.65f, 0.15f, 0.0f,
@@ -457,20 +382,19 @@ int main()
         glClearColor(0.1054f, 0.1210f, 0.1992f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        
-        glUseProgram(shaderProgram1);
+        helloShader.setInt("color", 0);
         glBindVertexArray(VAOs[0]);
         glDrawArrays(GL_TRIANGLES, 0, 81);
 
-        glUseProgram(shaderProgram2);
+        helloShader.setInt("color", 1);
         glBindVertexArray(VAOs[1]);
         glDrawArrays(GL_TRIANGLES, 0, 81);
 
-        glUseProgram(shaderProgram3);
+        helloShader.setInt("color", 2);
         glBindVertexArray(VAOs[2]);
         glDrawArrays(GL_TRIANGLES, 0, 81);
 
-        glUseProgram(shaderProgram4);
+        helloShader.setInt("color", 3);
         glBindVertexArray(VAOs[3]);
         glDrawArrays(GL_TRIANGLES, 0, 81);
 
@@ -480,10 +404,6 @@ int main()
     // delete programs and terminate
     glDeleteVertexArrays(2, VAOs);
     glDeleteBuffers(2, VBOs);
-    glDeleteProgram(shaderProgram1);
-    glDeleteProgram(shaderProgram2);
-    glDeleteProgram(shaderProgram3);
-    glDeleteProgram(shaderProgram4);
 
     glfwTerminate();
     return 0;

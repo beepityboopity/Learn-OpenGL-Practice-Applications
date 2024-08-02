@@ -19,8 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\glad.c" />
+    <ClCompile Include="..\..\Resources\Add To Project\glad.c" />
+    <ClCompile Include="..\..\Resources\includes\shaders\shader_class.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fragment.fs" />
+    <None Include="vertex.vs" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -75,8 +80,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\Owner\Documents\GitHub\headers and libraries\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Owner\Documents\GitHub\headers and libraries\library;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Resources\includes;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Resources\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>C:\Users\wcwal\Documents\GitHub\openglwtfareyou\libs and includes\includes;$(IncludePath)</IncludePath>

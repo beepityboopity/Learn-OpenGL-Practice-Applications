@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Shaders\\Attempted Raymarching\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{85B8125A-1183-459E-BABA-B43C56D7A6DC}|Attempted Raymarching\\Attempted Raymarching.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Shaders\\Attempted Raymarching\\Attempted Raymarching\\fragShader.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{85B8125A-1183-459E-BABA-B43C56D7A6DC}|Attempted Raymarching\\Attempted Raymarching.vcxproj|solutionrelative:Attempted Raymarching\\fragShader.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{85B8125A-1183-459E-BABA-B43C56D7A6DC}|Attempted Raymarching\\Attempted Raymarching.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Shaders\\Attempted Raymarching\\Attempted Raymarching\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{85B8125A-1183-459E-BABA-B43C56D7A6DC}|Attempted Raymarching\\Attempted Raymarching.vcxproj|solutionrelative:Attempted Raymarching\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85B8125A-1183-459E-BABA-B43C56D7A6DC}|Attempted Raymarching\\Attempted Raymarching.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Shaders\\Attempted Raymarching\\Attempted Raymarching\\fragShader.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{85B8125A-1183-459E-BABA-B43C56D7A6DC}|Attempted Raymarching\\Attempted Raymarching.vcxproj|solutionrelative:Attempted Raymarching\\fragShader.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{85B8125A-1183-459E-BABA-B43C56D7A6DC}|Attempted Raymarching\\Attempted Raymarching.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Shaders\\Attempted Raymarching\\Attempted Raymarching\\vertexShader.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -38,28 +38,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "fragShader.fs",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Shaders\\Attempted Raymarching\\Attempted Raymarching\\fragShader.fs",
               "RelativeDocumentMoniker": "Attempted Raymarching\\fragShader.fs",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Shaders\\Attempted Raymarching\\Attempted Raymarching\\fragShader.fs",
               "RelativeToolTip": "Attempted Raymarching\\fragShader.fs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAAAEQAAAAAAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAQwEQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-06-24T14:42:35.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-24T14:42:35.971Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Shaders\\Attempted Raymarching\\Attempted Raymarching\\main.cpp",
               "RelativeDocumentMoniker": "Attempted Raymarching\\main.cpp",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Shaders\\Attempted Raymarching\\Attempted Raymarching\\main.cpp",
               "RelativeToolTip": "Attempted Raymarching\\main.cpp",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAEsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-07T21:26:57.52Z"
+              "WhenOpened": "2024-04-07T21:26:57.52Z",
+              "EditorCaption": ""
             }
           ]
         }

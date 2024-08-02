@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Triangle Collects Triangles\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9F0CFD17-2608-42AF-9A53-B1DAA7CC76AF}|Triangle Collects Triangles\\Triangle Collects Triangles.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Triangle Collects Triangles\\Triangle Collects Triangles\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F0CFD17-2608-42AF-9A53-B1DAA7CC76AF}|Triangle Collects Triangles\\Triangle Collects Triangles.vcxproj|solutionrelative:Triangle Collects Triangles\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Triangle Collects Triangles\\Triangle Collects Triangles\\main.cpp",
+              "RelativeDocumentMoniker": "Triangle Collects Triangles\\main.cpp",
+              "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Triangle Collects Triangles\\Triangle Collects Triangles\\main.cpp",
+              "RelativeToolTip": "Triangle Collects Triangles\\main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-02T00:41:00.11Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

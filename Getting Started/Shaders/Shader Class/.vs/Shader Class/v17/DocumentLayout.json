@@ -66,8 +66,7 @@
               "RelativeToolTip": "Shader Class\\fragment_shader.fs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-16T00:44:54.223Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T00:44:54.223Z"
             },
             {
               "$type": "Document",
@@ -77,7 +76,7 @@
               "RelativeDocumentMoniker": "Shader Class\\vertex_shader.vs",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Shaders\\Shader Class\\Shader Class\\vertex_shader.vs",
               "RelativeToolTip": "Shader Class\\vertex_shader.vs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-05-16T00:44:36.402Z"
             },
@@ -89,7 +88,7 @@
               "RelativeDocumentMoniker": "Shader Class\\main.cpp",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Shaders\\Shader Class\\Shader Class\\main.cpp",
               "RelativeToolTip": "Shader Class\\main.cpp",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-16T00:24:33.149Z",
               "EditorCaption": ""

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\Texture Exercises\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1202A49B-85CE-476F-9B7D-97E33E22A946}|Texture Exercises\\Texture Exercises.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\Texture Exercises\\Texture Exercises\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1202A49B-85CE-476F-9B7D-97E33E22A946}|Texture Exercises\\Texture Exercises.vcxproj|solutionrelative:Texture Exercises\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1202A49B-85CE-476F-9B7D-97E33E22A946}|Texture Exercises\\Texture Exercises.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\Texture Exercises\\Texture Exercises\\frag.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{1202A49B-85CE-476F-9B7D-97E33E22A946}|Texture Exercises\\Texture Exercises.vcxproj|solutionrelative:Texture Exercises\\frag.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1202A49B-85CE-476F-9B7D-97E33E22A946}|Texture Exercises\\Texture Exercises.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\Texture Exercises\\Texture Exercises\\vertex.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{1202A49B-85CE-476F-9B7D-97E33E22A946}|Texture Exercises\\Texture Exercises.vcxproj|solutionrelative:Texture Exercises\\vertex.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1202A49B-85CE-476F-9B7D-97E33E22A946}|Texture Exercises\\Texture Exercises.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\Texture Exercises\\Texture Exercises\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1202A49B-85CE-476F-9B7D-97E33E22A946}|Texture Exercises\\Texture Exercises.vcxproj|solutionrelative:Texture Exercises\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "vertex.vs",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\Texture Exercises\\Texture Exercises\\vertex.vs",
               "RelativeDocumentMoniker": "Texture Exercises\\vertex.vs",
@@ -34,12 +34,11 @@
               "RelativeToolTip": "Texture Exercises\\vertex.vs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-29T19:10:45.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T19:10:45.582Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "frag.fs",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\Texture Exercises\\Texture Exercises\\frag.fs",
               "RelativeDocumentMoniker": "Texture Exercises\\frag.fs",
@@ -52,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\Texture Exercises\\Texture Exercises\\main.cpp",
               "RelativeDocumentMoniker": "Texture Exercises\\main.cpp",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\Texture Exercises\\Texture Exercises\\main.cpp",
               "RelativeToolTip": "Texture Exercises\\main.cpp",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAAAFwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-29T19:07:11.081Z",
               "EditorCaption": ""

@@ -1,2 +1,6 @@
-﻿  main.cpp
+﻿  glad.c
+  shader_class.cpp
+  stbi_load.cpp
+  main.cpp
+  Generating Code...
   First Transformations.vcxproj -> C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Transformations\First Transformations\x64\Debug\First Transformations.exe

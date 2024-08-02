@@ -19,14 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\headers and libraries\imgui files\imgui.cpp" />
-    <ClCompile Include="..\..\..\..\headers and libraries\imgui files\imgui_demo.cpp" />
-    <ClCompile Include="..\..\..\..\headers and libraries\imgui files\imgui_draw.cpp" />
-    <ClCompile Include="..\..\..\..\headers and libraries\imgui files\imgui_impl_glfw.cpp" />
-    <ClCompile Include="..\..\..\..\headers and libraries\imgui files\imgui_impl_opengl3.cpp" />
-    <ClCompile Include="..\..\..\..\headers and libraries\imgui files\imgui_tables.cpp" />
-    <ClCompile Include="..\..\..\..\headers and libraries\imgui files\imgui_widgets.cpp" />
-    <ClCompile Include="..\..\..\glad.c" />
+    <ClCompile Include="..\..\..\Resources\Add To Project\glad.c" />
+    <ClCompile Include="..\..\..\Resources\includes\imgui\imgui.cpp" />
+    <ClCompile Include="..\..\..\Resources\includes\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\..\..\Resources\includes\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\..\..\Resources\includes\imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="..\..\..\Resources\includes\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="..\..\..\Resources\includes\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\..\..\Resources\includes\imgui\imgui_widgets.cpp" />
     <ClCompile Include="imguiconfigs.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -86,8 +86,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\Owner\Documents\GitHub\headers and libraries\include;C:\Users\wcwal\Documents\GitHub\openglwtfareyou\libs and includes\includes;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Owner\Documents\GitHub\headers and libraries\library;C:\Users\wcwal\Documents\GitHub\openglwtfareyou\libs and includes\libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Resources\includes;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Resources\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>C:\Users\wcwal\Documents\GitHub\openglwtfareyou\libs and includes\includes;$(IncludePath)</IncludePath>

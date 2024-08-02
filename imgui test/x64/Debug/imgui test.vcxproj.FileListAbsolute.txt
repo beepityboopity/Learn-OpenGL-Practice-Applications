@@ -1,2 +1,0 @@
-C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\imgui test\x64\Debug\imgui test.exe
-C:\Users\Owner\Documents\GitHub\Learn-OpenGL-Practice-Applications\imgui test\x64\Debug\imgui test.exe

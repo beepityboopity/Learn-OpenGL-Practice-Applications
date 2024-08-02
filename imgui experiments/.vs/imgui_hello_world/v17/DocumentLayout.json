@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\imgui experiments\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D251D081-F6DF-4AEC-90A9-3921525D5295}|cpp autoclicker\\cpp autoclicker.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\imgui experiments\\cpp autoclicker\\useimgui.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D251D081-F6DF-4AEC-90A9-3921525D5295}|cpp autoclicker\\cpp autoclicker.vcxproj|solutionrelative:cpp autoclicker\\useimgui.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D251D081-F6DF-4AEC-90A9-3921525D5295}|cpp autoclicker\\cpp autoclicker.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\imgui experiments\\cpp autoclicker\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D251D081-F6DF-4AEC-90A9-3921525D5295}|cpp autoclicker\\cpp autoclicker.vcxproj|solutionrelative:cpp autoclicker\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D251D081-F6DF-4AEC-90A9-3921525D5295}|cpp autoclicker\\cpp autoclicker.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\imgui experiments\\cpp autoclicker\\useimgui.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D251D081-F6DF-4AEC-90A9-3921525D5295}|cpp autoclicker\\cpp autoclicker.vcxproj|solutionrelative:cpp autoclicker\\useimgui.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D251D081-F6DF-4AEC-90A9-3921525D5295}|cpp autoclicker\\cpp autoclicker.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\imgui experiments\\cpp autoclicker\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D251D081-F6DF-4AEC-90A9-3921525D5295}|cpp autoclicker\\cpp autoclicker.vcxproj|solutionrelative:cpp autoclicker\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D251D081-F6DF-4AEC-90A9-3921525D5295}|cpp autoclicker\\cpp autoclicker.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\imgui experiments\\cpp autoclicker\\useimgui.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D251D081-F6DF-4AEC-90A9-3921525D5295}|cpp autoclicker\\cpp autoclicker.vcxproj|solutionrelative:cpp autoclicker\\useimgui.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\imgui experiments\\cpp autoclicker\\main.cpp",
               "RelativeDocumentMoniker": "cpp autoclicker\\main.cpp",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\imgui experiments\\cpp autoclicker\\main.cpp",
               "RelativeToolTip": "cpp autoclicker\\main.cpp",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAAACwAAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-28T20:45:15.458Z",
               "EditorCaption": ""
@@ -45,14 +45,14 @@
               "RelativeDocumentMoniker": "cpp autoclicker\\useimgui.h",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\imgui experiments\\cpp autoclicker\\useimgui.h",
               "RelativeToolTip": "cpp autoclicker\\useimgui.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-28T20:45:15.475Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "useimgui.cpp",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\imgui experiments\\cpp autoclicker\\useimgui.cpp",
               "RelativeDocumentMoniker": "cpp autoclicker\\useimgui.cpp",

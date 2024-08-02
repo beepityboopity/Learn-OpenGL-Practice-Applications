@@ -1,0 +1,23 @@
+﻿  glad.c
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_glfw.cpp
+  imgui_impl_opengl3.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  shader_class.cpp
+  stbi_load.cpp
+  main.cpp
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Linear Algebra Testing\Linear Algebra Testing\main.cpp(218,9): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Linear Algebra Testing\Linear Algebra Testing\main.cpp(218,14): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Linear Algebra Testing\Linear Algebra Testing\main.cpp(218,19): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Linear Algebra Testing\Linear Algebra Testing\main.cpp(219,9): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Linear Algebra Testing\Linear Algebra Testing\main.cpp(219,14): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Linear Algebra Testing\Linear Algebra Testing\main.cpp(219,19): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Linear Algebra Testing\Linear Algebra Testing\main.cpp(220,9): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Linear Algebra Testing\Linear Algebra Testing\main.cpp(220,14): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Linear Algebra Testing\Linear Algebra Testing\main.cpp(220,19): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Linear Algebra Testing\Linear Algebra Testing\main.cpp(170,44): warning C4101: 'lightTexture': unreferenced local variable
+  Generating Code...
+  Linear Algebra Testing.vcxproj -> C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Linear Algebra Testing\x64\Debug\Linear Algebra Testing.exe

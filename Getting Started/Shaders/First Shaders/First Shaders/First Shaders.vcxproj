@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\glad.c" />
+    <ClCompile Include="..\..\..\..\Resources\Add To Project\glad.c" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -75,8 +75,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\wcwal\Documents\Visual Studio 2022\imgui-and-opengl-stuffs\includes;C:\Users\Christianna\Documents\Visual Studio 2022\imgui and glfw\includes;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\wcwal\Documents\Visual Studio 2022\imgui-and-opengl-stuffs\libs;C:\Users\Christianna\Documents\Visual Studio 2022\imgui and glfw\libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Resources\includes;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Resources\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>C:\Users\wcwal\Documents\Visual Studio 2022\imgui-and-opengl-stuffs\includes;C:\Users\wcwal\Documents\Visual Studio 2022\imgui-and-opengl-stuffs\includes;C:\Users\wcwal\Documents\GitHub\openglwtfareyou\libs and includes\includes;$(IncludePath)</IncludePath>

@@ -1,2 +1,5 @@
-﻿  main.cpp
+﻿  glad.c
+  shader_class.cpp
+  main.cpp
+  Generating Code...
   First Textures.vcxproj -> C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Textures\First Textures\x64\Debug\First Textures.exe

@@ -1,19 +1,28 @@
-﻿  main.cpp
-C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(117,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(118,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(119,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(120,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(122,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(171,32): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(172,32): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(173,32): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(176,32): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(177,32): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(178,32): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(181,32): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(182,32): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(183,32): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(186,32): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(187,32): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(188,32): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-  Triangle Collects Triangles.vcxproj -> C:\Users\wcwal\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\x64\Debug\Triangle Collects Triangles.exe
+﻿  glad.c
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_glfw.cpp
+  imgui_impl_opengl3.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  main.cpp
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(117,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(118,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(119,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(120,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(122,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(171,32): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(172,32): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(173,32): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(176,32): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(177,32): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(178,32): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(181,32): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(182,32): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(183,32): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(186,32): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(187,32): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\Triangle Collects Triangles\main.cpp(188,32): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  Triangle Collects Triangles.vcxproj -> C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Triangle Collects Triangles\x64\Debug\Triangle Collects Triangles.exe

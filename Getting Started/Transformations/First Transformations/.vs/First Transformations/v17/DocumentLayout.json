@@ -3,22 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Transformations\\First Transformations\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C748AD3F-C16B-446A-B1BA-3CAF9E768104}|First Transformations\\First Transformations.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Transformations\\First Transformations\\First Transformations\\frag.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{C748AD3F-C16B-446A-B1BA-3CAF9E768104}|First Transformations\\First Transformations.vcxproj|solutionrelative:First Transformations\\frag.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{C748AD3F-C16B-446A-B1BA-3CAF9E768104}|First Transformations\\First Transformations.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Transformations\\First Transformations\\First Transformations\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C748AD3F-C16B-446A-B1BA-3CAF9E768104}|First Transformations\\First Transformations.vcxproj|solutionrelative:First Transformations\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C748AD3F-C16B-446A-B1BA-3CAF9E768104}|First Transformations\\First Transformations.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Transformations\\First Transformations\\First Transformations\\vertex.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{C748AD3F-C16B-446A-B1BA-3CAF9E768104}|First Transformations\\First Transformations.vcxproj|solutionrelative:First Transformations\\vertex.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C748AD3F-C16B-446A-B1BA-3CAF9E768104}|First Transformations\\First Transformations.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Transformations\\First Transformations\\First Transformations\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C748AD3F-C16B-446A-B1BA-3CAF9E768104}|First Transformations\\First Transformations.vcxproj|solutionrelative:First Transformations\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C748AD3F-C16B-446A-B1BA-3CAF9E768104}|First Transformations\\First Transformations.vcxproj|C:\\Users\\Christianna\\Documents\\Visual Studio 2022\\simple shader setup\\shader_class.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C748AD3F-C16B-446A-B1BA-3CAF9E768104}|First Transformations\\First Transformations.vcxproj|C:\\Users\\Christianna\\Documents\\Visual Studio 2022\\simple shader setup\\shader_class.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C748AD3F-C16B-446A-B1BA-3CAF9E768104}|First Transformations\\First Transformations.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Transformations\\First Transformations\\First Transformations\\frag.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{C748AD3F-C16B-446A-B1BA-3CAF9E768104}|First Transformations\\First Transformations.vcxproj|solutionrelative:First Transformations\\frag.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,32 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "shader_class.h",
-              "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\Visual Studio 2022\\simple shader setup\\shader_class.h",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Visual Studio 2022\\simple shader setup\\shader_class.h",
-              "ToolTip": "C:\\Users\\Christianna\\Documents\\Visual Studio 2022\\simple shader setup\\shader_class.h",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Visual Studio 2022\\simple shader setup\\shader_class.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-29T20:57:11.273Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "shader_class.cpp",
-              "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\Visual Studio 2022\\simple shader setup\\shader_class.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Visual Studio 2022\\simple shader setup\\shader_class.cpp",
-              "ToolTip": "C:\\Users\\Christianna\\Documents\\Visual Studio 2022\\simple shader setup\\shader_class.cpp",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Visual Studio 2022\\simple shader setup\\shader_class.cpp",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAFgAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-29T20:57:08.952Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -64,12 +34,11 @@
               "RelativeToolTip": "First Transformations\\vertex.vs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-29T20:21:52.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T20:21:52.259Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "frag.fs",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Transformations\\First Transformations\\First Transformations\\frag.fs",
               "RelativeDocumentMoniker": "First Transformations\\frag.fs",
@@ -77,18 +46,17 @@
               "RelativeToolTip": "First Transformations\\frag.fs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-29T20:21:51.713Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T20:21:51.713Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Transformations\\First Transformations\\First Transformations\\main.cpp",
               "RelativeDocumentMoniker": "First Transformations\\main.cpp",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Transformations\\First Transformations\\First Transformations\\main.cpp",
               "RelativeToolTip": "First Transformations\\main.cpp",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAFAAAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-29T20:18:30.566Z",
               "EditorCaption": ""

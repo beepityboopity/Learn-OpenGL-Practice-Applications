@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\First Textures\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC68EBE3-9EA8-4410-AC35-A3997E49341F}|First Textures\\First Textures.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\First Textures\\First Textures\\frag.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{DC68EBE3-9EA8-4410-AC35-A3997E49341F}|First Textures\\First Textures.vcxproj|solutionrelative:First Textures\\frag.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC68EBE3-9EA8-4410-AC35-A3997E49341F}|First Textures\\First Textures.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\First Textures\\First Textures\\vertex.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{DC68EBE3-9EA8-4410-AC35-A3997E49341F}|First Textures\\First Textures.vcxproj|solutionrelative:First Textures\\vertex.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DC68EBE3-9EA8-4410-AC35-A3997E49341F}|First Textures\\First Textures.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\First Textures\\First Textures\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DC68EBE3-9EA8-4410-AC35-A3997E49341F}|First Textures\\First Textures.vcxproj|solutionrelative:First Textures\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC68EBE3-9EA8-4410-AC35-A3997E49341F}|First Textures\\First Textures.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\First Textures\\First Textures\\stbi_load.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DC68EBE3-9EA8-4410-AC35-A3997E49341F}|First Textures\\First Textures.vcxproj|solutionrelative:First Textures\\stbi_load.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC68EBE3-9EA8-4410-AC35-A3997E49341F}|First Textures\\First Textures.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\First Textures\\First Textures\\frag.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{DC68EBE3-9EA8-4410-AC35-A3997E49341F}|First Textures\\First Textures.vcxproj|solutionrelative:First Textures\\frag.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC68EBE3-9EA8-4410-AC35-A3997E49341F}|First Textures\\First Textures.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\First Textures\\First Textures\\vertex.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DC68EBE3-9EA8-4410-AC35-A3997E49341F}|First Textures\\First Textures.vcxproj|solutionrelative:First Textures\\vertex.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "stbi_load.cpp",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\First Textures\\First Textures\\stbi_load.cpp",
               "RelativeDocumentMoniker": "First Textures\\stbi_load.cpp",
@@ -38,11 +38,12 @@
               "RelativeToolTip": "First Textures\\stbi_load.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-29T00:53:36.401Z"
+              "WhenOpened": "2024-05-29T00:53:36.401Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "vertex.vs",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\First Textures\\First Textures\\vertex.vs",
               "RelativeDocumentMoniker": "First Textures\\vertex.vs",
@@ -50,12 +51,11 @@
               "RelativeToolTip": "First Textures\\vertex.vs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-29T00:19:06.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T00:19:06.74Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "frag.fs",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\First Textures\\First Textures\\frag.fs",
               "RelativeDocumentMoniker": "First Textures\\frag.fs",
@@ -68,13 +68,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\First Textures\\First Textures\\main.cpp",
               "RelativeDocumentMoniker": "First Textures\\main.cpp",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Getting Started\\Textures\\First Textures\\First Textures\\main.cpp",
               "RelativeToolTip": "First Textures\\main.cpp",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAEwAAAAuAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-29T00:14:41.111Z",
               "EditorCaption": ""

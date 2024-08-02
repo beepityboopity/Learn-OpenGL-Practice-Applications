@@ -1,8 +1,8 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <stb_image.h>
+#include <texture setup/stb_image.h>
 #include <iostream>
-#include <shader_class.h>
+#include <shaders/shader_class.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
@@ -120,7 +120,7 @@ int main() {
 
     int width, height, nrChannels;
     //stbi_set_flip_vertically_on_load(true); // flips the image vertically
-    unsigned char* data = stbi_load("Trilobite.png", &width, &height, &nrChannels, 0); // loads image data and stores its dimensions
+    unsigned char* data = stbi_load("Snail.png", &width, &height, &nrChannels, 0); // loads image data and stores its dimensions
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data); // generates the texture
     glGenerateMipmap(GL_TEXTURE_2D); // generates mipmaps
     stbi_image_free(data); // free memory

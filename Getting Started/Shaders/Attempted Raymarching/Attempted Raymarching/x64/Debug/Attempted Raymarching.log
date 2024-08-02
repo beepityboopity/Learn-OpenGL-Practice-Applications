@@ -1,1 +1,12 @@
-﻿  Attempted Raymarching.vcxproj -> C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Shaders\Attempted Raymarching\x64\Debug\Attempted Raymarching.exe
+﻿  glad.c
+  shader_class.cpp
+  main.cpp
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Shaders\Attempted Raymarching\Attempted Raymarching\main.cpp(62,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Shaders\Attempted Raymarching\Attempted Raymarching\main.cpp(66,31): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Shaders\Attempted Raymarching\Attempted Raymarching\main.cpp(68,31): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Shaders\Attempted Raymarching\Attempted Raymarching\main.cpp(70,31): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Shaders\Attempted Raymarching\Attempted Raymarching\main.cpp(72,31): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Shaders\Attempted Raymarching\Attempted Raymarching\main.cpp(106,28): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Shaders\Attempted Raymarching\Attempted Raymarching\main.cpp(114,25): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+  Generating Code...
+  Attempted Raymarching.vcxproj -> C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Getting Started\Shaders\Attempted Raymarching\x64\Debug\Attempted Raymarching.exe
