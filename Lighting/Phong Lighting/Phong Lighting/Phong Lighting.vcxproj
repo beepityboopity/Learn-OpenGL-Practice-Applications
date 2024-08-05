@@ -145,8 +145,12 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="frag.fs" />
-    <None Include="vertex.vs" />
+    <None Include="Gouraud.fs" />
+    <None Include="Gouraud.vs" />
+    <None Include="lightSourceFrag.fs" />
+    <None Include="lightSourceVertex.vs" />
+    <None Include="Phong.fs" />
+    <None Include="Phong.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

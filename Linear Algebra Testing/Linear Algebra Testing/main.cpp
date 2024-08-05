@@ -214,11 +214,6 @@ int main() {
 
     // imgui stuff
     imguiSetup(window, "#version 130");
-    float vertices[] = {
-        0.1, 0.1, 0.1,
-        0.1, 0.1, 0.1,
-        0.1, 0.1, 0.1
-    };
 
     glm::mat4 sandMatrix = glm::mat4(1.0f);
 

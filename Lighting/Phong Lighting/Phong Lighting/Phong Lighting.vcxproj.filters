@@ -50,7 +50,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="vertex.vs" />
-    <None Include="frag.fs" />
+    <None Include="lightSourceVertex.vs" />
+    <None Include="lightSourceFrag.fs" />
+    <None Include="Phong.vs" />
+    <None Include="Phong.fs" />
+    <None Include="Gouraud.vs" />
+    <None Include="Gouraud.fs" />
   </ItemGroup>
 </Project>

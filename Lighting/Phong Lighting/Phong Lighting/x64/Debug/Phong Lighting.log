@@ -1,2 +1,17 @@
 ﻿  main.cpp
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Phong Lighting\Phong Lighting\main.cpp(187,46): warning C4305: 'argument': truncation from 'double' to 'T'
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Phong Lighting\Phong Lighting\main.cpp(187,46): warning C4305:         with
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Phong Lighting\Phong Lighting\main.cpp(187,46): warning C4305:         [
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Phong Lighting\Phong Lighting\main.cpp(187,46): warning C4305:             T=float
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Phong Lighting\Phong Lighting\main.cpp(187,46): warning C4305:         ]
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Phong Lighting\Phong Lighting\main.cpp(274,88): warning C4305: '-=': truncation from 'double' to 'T'
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Phong Lighting\Phong Lighting\main.cpp(274,88): warning C4305:         with
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Phong Lighting\Phong Lighting\main.cpp(274,88): warning C4305:         [
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Phong Lighting\Phong Lighting\main.cpp(274,88): warning C4305:             T=float
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Phong Lighting\Phong Lighting\main.cpp(274,88): warning C4305:         ]
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Phong Lighting\Phong Lighting\main.cpp(275,88): warning C4305: '+=': truncation from 'double' to 'T'
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Phong Lighting\Phong Lighting\main.cpp(275,88): warning C4305:         with
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Phong Lighting\Phong Lighting\main.cpp(275,88): warning C4305:         [
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Phong Lighting\Phong Lighting\main.cpp(275,88): warning C4305:             T=float
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Phong Lighting\Phong Lighting\main.cpp(275,88): warning C4305:         ]
   Phong Lighting.vcxproj -> C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Phong Lighting\x64\Debug\Phong Lighting.exe

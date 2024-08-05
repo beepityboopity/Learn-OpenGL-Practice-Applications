@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "Linear Algebra Testing\\main.cpp",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Linear Algebra Testing\\Linear Algebra Testing\\main.cpp",
               "RelativeToolTip": "Linear Algebra Testing\\main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAATAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAEABAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-07-26T14:49:15.621Z",
               "EditorCaption": ""
@@ -47,8 +47,7 @@
               "RelativeToolTip": "Linear Algebra Testing\\vertex.vs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-26T14:51:24.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T14:51:24.328Z"
             },
             {
               "$type": "Document",
@@ -60,8 +59,7 @@
               "RelativeToolTip": "Linear Algebra Testing\\frag.fs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-26T14:51:23.451Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T14:51:23.451Z"
             }
           ]
         }
