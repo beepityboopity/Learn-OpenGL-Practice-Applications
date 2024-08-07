@@ -7,28 +7,28 @@
       "RelativeMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|solutionrelative:Phong Lighting\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\Gouraud.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|solutionrelative:Phong Lighting\\Gouraud.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\Gouraud.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|solutionrelative:Phong Lighting\\Gouraud.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\Phong.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|solutionrelative:Phong Lighting\\Phong.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\lightSourceVertex.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|solutionrelative:Phong Lighting\\lightSourceVertex.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\lightSourceFrag.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|solutionrelative:Phong Lighting\\lightSourceFrag.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\lightSourceVertex.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|solutionrelative:Phong Lighting\\lightSourceVertex.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\Phong.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|solutionrelative:Phong Lighting\\Phong.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\Phong.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|solutionrelative:Phong Lighting\\Phong.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\Gouraud.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|solutionrelative:Phong Lighting\\Gouraud.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\Gouraud.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{56548442-65E1-4057-91E1-C0C957786F99}|Phong Lighting\\Phong Lighting.vcxproj|solutionrelative:Phong Lighting\\Gouraud.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +42,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Gouraud.fs",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\Gouraud.fs",
               "RelativeDocumentMoniker": "Phong Lighting\\Gouraud.fs",
@@ -50,12 +50,11 @@
               "RelativeToolTip": "Phong Lighting\\Gouraud.fs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-05T13:15:11.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-05T13:15:11.183Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Gouraud.vs",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\Gouraud.vs",
               "RelativeDocumentMoniker": "Phong Lighting\\Gouraud.vs",
@@ -63,51 +62,50 @@
               "RelativeToolTip": "Phong Lighting\\Gouraud.vs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAACsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-05T13:14:58.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-05T13:14:58.499Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Phong.fs",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\Phong.fs",
               "RelativeDocumentMoniker": "Phong Lighting\\Phong.fs",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\Phong.fs",
               "RelativeToolTip": "Phong Lighting\\Phong.fs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAvAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-08-02T15:34:56.637Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Phong.vs",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\Phong.vs",
               "RelativeDocumentMoniker": "Phong Lighting\\Phong.vs",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\Phong.vs",
               "RelativeToolTip": "Phong Lighting\\Phong.vs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-08-02T15:34:44.853Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "lightSourceFrag.fs",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\lightSourceFrag.fs",
               "RelativeDocumentMoniker": "Phong Lighting\\lightSourceFrag.fs",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\lightSourceFrag.fs",
               "RelativeToolTip": "Phong Lighting\\lightSourceFrag.fs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-08-01T23:55:40.707Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "lightSourceVertex.vs",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\lightSourceVertex.vs",
               "RelativeDocumentMoniker": "Phong Lighting\\lightSourceVertex.vs",
@@ -126,7 +124,7 @@
               "RelativeDocumentMoniker": "Phong Lighting\\main.cpp",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Phong Lighting\\Phong Lighting\\main.cpp",
               "RelativeToolTip": "Phong Lighting\\main.cpp",
-              "ViewState": "AQIAAMwAAAAAAAAAAAAAANUAAAAJAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAiwB8BAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-01T23:17:32.053Z",
               "EditorCaption": ""

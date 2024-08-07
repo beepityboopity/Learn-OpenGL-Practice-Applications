@@ -13,6 +13,7 @@
 
 void frameCallback(GLFWwindow* window, int width, int height);
 void imguiSetup(GLFWwindow* window, const char* glsl_version);
+unsigned int setTexture(char const* filePath);
 
 int main() {
 
@@ -166,7 +167,7 @@ int main() {
     // ********
     // TEXTURES
     // ********
-
+    
     unsigned int gridTexture, cubeTexture, lightTexture;
     int width, height, nrChannels;
     // grid
@@ -198,6 +199,10 @@ int main() {
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data1);
     glGenerateMipmap(GL_TEXTURE_2D);
     stbi_image_free(data1);
+    
+
+    //unsigned int gridTexture = setTexture("gameBoard.png");
+    //unsigned int cubeTexture = setTexture("rubixCube.png");
 
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, gridTexture);
@@ -343,4 +348,27 @@ void imguiSetup(GLFWwindow* window, const char* glsl_version) {
     ImGui_ImplGlfw_InitForOpenGL(window, true);
     ImGui_ImplOpenGL3_Init(glsl_version);
     ImGui::StyleColorsClassic();
+}
+
+unsigned int setTexture(char const* filePath) {
+    unsigned int ID;
+    glGenTextures(1, &ID);
+    int width, height, nrChannels;
+    unsigned char* data = stbi_load(filePath, &width, &height, &nrChannels, 0);
+
+    GLenum format = GL_RGB;
+    if (nrChannels == 1) format = GL_RED;
+    else if (nrChannels == 3) format = GL_RGB;
+    else if (nrChannels == 4) format = GL_RGBA;
+
+    glBindTexture(GL_TEXTURE_2D, ID);
+    glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
+    glGenerateMipmap(GL_TEXTURE_2D);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+
+    stbi_image_free(data);
+    return ID;
 }
