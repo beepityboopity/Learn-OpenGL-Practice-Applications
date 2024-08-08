@@ -31,7 +31,7 @@ int main() {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-    GLFWwindow* window = glfwCreateWindow(1000, 750, "Phong Lighting", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(1000, 750, "Multi Lighting", NULL, NULL);
     glfwMakeContextCurrent(window);
     glfwSetFramebufferSizeCallback(window, frameCallback);
     gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
@@ -109,8 +109,8 @@ int main() {
     unsigned int diffuseMap = setTexture("box.png");
     unsigned int specMap = setTexture("boxSpec.png");
     PhongShader.use();
-    PhongShader.setInt("objDiff", 0);
-    PhongShader.setInt("objSpec", 1);
+    PhongShader.setInt("object.diff", 0);
+    PhongShader.setInt("object.spec", 1);
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, diffuseMap);
     glActiveTexture(GL_TEXTURE1);
@@ -120,16 +120,29 @@ int main() {
     int rotationVar2 = 45;
     float zoomVar = -20;
 
-    int shaderSelect = 1;
-    int inputSelect = 1;
-    int dependence = 1;
-    glm::vec3 lightPos(3.0f);
-    glm::vec3 objectCol(1.0f, 0.5f, 0.31f);
-    glm::vec3 lightCol(1.0f);
-    glm::vec3 lightDiff = lightCol;
-    glm::vec3 lightAmb = lightDiff * glm::vec3(0.1f);
-    glm::vec3 lightSpec(1.0f);
-    float objShiny = 128.0f;
+    glm::vec3 dirLightDirection(-0.2f, -1.0f, -0.3f);
+    glm::vec3 dirLightAmb(0.05f);
+    glm::vec3 dirLightDiff(0.4f);
+    glm::vec3 dirLightSpec(0.5f);
+
+    glm::vec3 pointLightPos(3.0f);
+    glm::vec3 pointLightAmb(0.05f);
+    glm::vec3 pointLightDiff(0.8f);
+    glm::vec3 pointLightSpec(1.0f);
+    float pointLightConst = 1.0f;
+    float pointLightLin = 0.09f;
+    float pointLightQuad = 0.032f;
+
+    glm::vec3 spotLightAmb(0.0f);
+    glm::vec3 spotLightDiff(1.0f);
+    glm::vec3 spotLightSpec(1.0f);
+    float spotLightConst = 1.0f;
+    float spotLightLin = 0.09f;
+    float spotLightQuad = 0.032f;
+    float spotLightIn = 12.5f;
+    float spotLightOut = 15.0f;
+
+    int inputTypeSelect = 0;
 
     while (!glfwWindowShouldClose(window)) {
 
@@ -143,44 +156,60 @@ int main() {
         ImGui::NewFrame();
 
         ImGui::Begin("Shader Options");
-        ImGui::RadioButton("Slider Input", &inputSelect, 1);
+        ImGui::Text("Input Type");
         ImGui::SameLine();
-        ImGui::RadioButton("Text Input", &inputSelect, 0);
-        ImGui::RadioButton("Independent", &dependence, 0);
+        ImGui::RadioButton("Text", &inputTypeSelect, 0);
         ImGui::SameLine();
-        ImGui::RadioButton("Dependent", &dependence, 1);
-        ImGui::Text("Object:");
-        if (inputSelect) {
-            ImGui::SliderFloat("Object Shininess", &objShiny, 1, 256);
-            ImGui::Text("Light:");
-            ImGui::SliderFloat3("Light Color", &lightCol[0], 0.0f, 1.0f);
-            ImGui::SliderFloat3("Light Ambient", &lightAmb[0], 0.0f, 1.0f);
-            ImGui::SliderFloat3("Light Diffuse", &lightDiff[0], 0.0f, 1.0f);
-            ImGui::SliderFloat3("Light Specular", &lightSpec[0], 0.0f, 1.0f);
-
+        ImGui::RadioButton("Slider", &inputTypeSelect, 1);
+        if(!inputTypeSelect){
+            ImGui::Text("Directional Light");
+            ImGui::InputFloat3("Directional Direction", &dirLightDirection[0]);
+            ImGui::InputFloat3("Directional Ambient", &dirLightAmb[0]);
+            ImGui::InputFloat3("Directional Diffuse", &dirLightDiff[0]);
+            ImGui::InputFloat3("Directional Specular", &dirLightSpec[0]);
+            ImGui::Text("Point Light");
+            ImGui::InputFloat3("Point Position", &pointLightPos[0]);
+            ImGui::InputFloat3("Point Ambient", &pointLightAmb[0]);
+            ImGui::InputFloat3("Point Diffuse", &pointLightDiff[0]);
+            ImGui::InputFloat3("Point Specular", &pointLightSpec[0]);
+            ImGui::InputFloat("Point Constant", &pointLightConst);
+            ImGui::InputFloat("Point Linear", &pointLightLin);
+            ImGui::InputFloat("Point Quadratic", &pointLightQuad);
+            ImGui::Text("Flash Light");
+            ImGui::InputFloat3("Flash Ambient", &spotLightAmb[0]);
+            ImGui::InputFloat3("Flash Diffuse", &spotLightDiff[0]);
+            ImGui::InputFloat3("Flash Specular", &spotLightSpec[0]);
+            ImGui::InputFloat("Flash Constant", &spotLightConst);
+            ImGui::InputFloat("Flash Linear", &spotLightLin);
+            ImGui::InputFloat("Flash Quadratic", &spotLightQuad);
+            ImGui::InputFloat("Flash Inner", &spotLightIn);
+            ImGui::InputFloat("Flash Outer", &spotLightOut);
         }
         else {
-            ImGui::InputFloat("Object Shininess", &objShiny);
-            ImGui::Text("Light:");
-            ImGui::InputFloat3("Light Color", &lightCol[0]);
-            ImGui::InputFloat3("Light Ambient", &lightAmb[0]);
-            ImGui::InputFloat3("Light Diffuse", &lightDiff[0]);
-            ImGui::InputFloat3("Light Specular", &lightSpec[0]);
-        }
-        if (ImGui::Button("Reset")) {
-            objectCol = glm::vec3(1.0f, 0.5f, 0.31f);
-            lightCol = glm::vec3(1.0f);
-            lightDiff = lightCol;
-            lightAmb = lightDiff * glm::vec3(0.1f);
-            lightSpec = glm::vec3(1.0f);
-            objShiny = 128.0f;
+            ImGui::Text("Directional Light");
+            ImGui::SliderFloat3("Directional Direction", &dirLightDirection[0], -3.0f, 3.0f);
+            ImGui::SliderFloat3("Directional Ambient", &dirLightAmb[0], 0.0f, 1.0f);
+            ImGui::SliderFloat3("Directional Diffuse", &dirLightDiff[0], 0.0f, 1.0f);
+            ImGui::SliderFloat3("Directional Specular", &dirLightSpec[0], 0.0f, 1.0f);
+            ImGui::Text("Point Light");
+            ImGui::SliderFloat3("Point Position", &pointLightPos[0], 0.0f, 1.0f);
+            ImGui::SliderFloat3("Point Ambient", &pointLightAmb[0], 0.0f, 1.0f);
+            ImGui::SliderFloat3("Point Diffuse", &pointLightDiff[0], 0.0f, 1.0f);
+            ImGui::SliderFloat3("Point Specular", &pointLightSpec[0], 0.0f, 1.0f);
+            ImGui::SliderFloat("Point Constant", &pointLightConst, 0.0f, 5.0f);
+            ImGui::SliderFloat("Point Linear", &pointLightLin, 0.0f, 1.0f);
+            ImGui::SliderFloat("Point Quadratic", &pointLightQuad, 0.0f, 0.1f);
+            ImGui::Text("Flash Light");
+            ImGui::SliderFloat3("Flash Ambient", &spotLightAmb[0], 0.0f, 1.0f);
+            ImGui::SliderFloat3("Flash Diffuse", &spotLightDiff[0], 0.0f, 1.0f);
+            ImGui::SliderFloat3("Flash Specular", &spotLightSpec[0], 0.0f, 1.0f);
+            ImGui::SliderFloat("Flash Constant", &spotLightConst, 0.0f, 5.0f);
+            ImGui::SliderFloat("Flash Linear", &spotLightLin, 0.0f, 0.1f);
+            ImGui::SliderFloat("Flash Quadratic", &spotLightQuad, 0.0f, 0.1f);
+            ImGui::SliderFloat("Flash Inner", &spotLightIn, 11.0f, 15.0f);
+            ImGui::SliderFloat("Flash Outer", &spotLightOut, 11.0f, 15.0f);
         }
         ImGui::End();
-
-        if (dependence) {
-            lightDiff = lightCol;
-            lightAmb = lightDiff * glm::vec3(0.1);
-        }
 
         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -192,13 +221,33 @@ int main() {
         view = superiorCamera.GetViewMatrix();
         projection = glm::perspective(glm::radians(superiorCamera.Zoom), (float)1000 / (float)750, 0.1f, 100.0f);
 
-        
         PhongShader.use();
-        PhongShader.setVec3("lightPos", lightPos);
-        PhongShader.setVec3("lightAmb", lightAmb);
-        PhongShader.setVec3("lightDiff", lightDiff);
-        PhongShader.setVec3("lightSpec", lightSpec);
-        PhongShader.setFloat("objShiny", objShiny);
+
+        PhongShader.setVec3("dirLight.direction", dirLightDirection);
+        PhongShader.setVec3("dirLight.amb", dirLightAmb);
+        PhongShader.setVec3("dirLight.diff", dirLightDiff);
+        PhongShader.setVec3("dirLight.spec", dirLightSpec);
+
+        PhongShader.setVec3("pointLight.pos", pointLightPos);
+        PhongShader.setVec3("pointLight.amb", pointLightAmb);
+        PhongShader.setVec3("pointLight.diff", pointLightDiff);
+        PhongShader.setVec3("pointLight.spec", pointLightSpec);
+        PhongShader.setFloat("pointLight.constant", pointLightConst);
+        PhongShader.setFloat("pointLight.linear", pointLightLin);
+        PhongShader.setFloat("pointLight.quadratic", pointLightQuad);
+
+        PhongShader.setVec3("spotLight.pos", superiorCamera.Position);
+        PhongShader.setVec3("spotLight.direction", -superiorCamera.Front);
+        PhongShader.setVec3("spotLight.amb", spotLightAmb);
+        PhongShader.setVec3("spotLight.diff", spotLightDiff);
+        PhongShader.setVec3("spotLight.spec", spotLightSpec);
+        PhongShader.setFloat("spotLight.constant", spotLightConst);
+        PhongShader.setFloat("spotLight.linear", spotLightLin);
+        PhongShader.setFloat("spotLight.quadratic", spotLightQuad);
+        PhongShader.setFloat("spotLight.inner", glm::cos(spotLightIn));
+        PhongShader.setFloat("spotLight.outer", glm::cos(spotLightOut));
+
+        PhongShader.setFloat("object.shiny", 128);
         PhongShader.setVec3("viewPos", superiorCamera.Position);
         PhongShader.setMat4("model", model);
         PhongShader.setMat4("view", view);
@@ -206,18 +255,18 @@ int main() {
         
         glBindVertexArray(cubeVAO);
         glDrawArrays(GL_TRIANGLES, 0, 36);
-
+        
         // light source
         lightSourceShader.use();
-        model = glm::translate(model, lightPos);
-        lightSourceShader.setVec3("color", lightCol);
+        model = glm::translate(model, pointLightPos);
+        lightSourceShader.setVec3("color", pointLightDiff);
         lightSourceShader.setMat4("model", model);
         lightSourceShader.setMat4("view", view);
         lightSourceShader.setMat4("projection", projection);
 
         glBindVertexArray(lightVAO);
         glDrawArrays(GL_TRIANGLES, 0, 36);
-
+        
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
         glfwSwapBuffers(window);

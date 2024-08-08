@@ -1,17 +1,12 @@
 ﻿  main.cpp
-C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(182,46): warning C4305: 'argument': truncation from 'double' to 'T'
-C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(182,46): warning C4305:         with
-C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(182,46): warning C4305:         [
-C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(182,46): warning C4305:             T=float
-C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(182,46): warning C4305:         ]
-C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(250,88): warning C4305: '-=': truncation from 'double' to 'T'
-C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(250,88): warning C4305:         with
-C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(250,88): warning C4305:         [
-C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(250,88): warning C4305:             T=float
-C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(250,88): warning C4305:         ]
-C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(251,88): warning C4305: '+=': truncation from 'double' to 'T'
-C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(251,88): warning C4305:         with
-C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(251,88): warning C4305:         [
-C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(251,88): warning C4305:             T=float
-C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(251,88): warning C4305:         ]
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(299,88): warning C4305: '-=': truncation from 'double' to 'T'
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(299,88): warning C4305:         with
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(299,88): warning C4305:         [
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(299,88): warning C4305:             T=float
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(299,88): warning C4305:         ]
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(300,88): warning C4305: '+=': truncation from 'double' to 'T'
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(300,88): warning C4305:         with
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(300,88): warning C4305:         [
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(300,88): warning C4305:             T=float
+C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\Textures & Multiple lights\main.cpp(300,88): warning C4305:         ]
   Textures & Multiple lights.vcxproj -> C:\Users\Christianna\Documents\GitHub\Learn-OpenGL-Practice-Applications\Lighting\Textures & Multiple lights\x64\Debug\Textures & Multiple lights.exe

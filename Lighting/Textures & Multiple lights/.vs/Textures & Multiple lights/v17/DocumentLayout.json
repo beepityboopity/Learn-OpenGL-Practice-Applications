@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Textures \u0026 Multiple lights\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE8E84AC-225F-4FCA-B26C-EA5F99938F38}|Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights\\Phong.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{EE8E84AC-225F-4FCA-B26C-EA5F99938F38}|Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights.vcxproj|solutionrelative:Textures \u0026 Multiple lights\\Phong.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EE8E84AC-225F-4FCA-B26C-EA5F99938F38}|Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EE8E84AC-225F-4FCA-B26C-EA5F99938F38}|Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights.vcxproj|solutionrelative:Textures \u0026 Multiple lights\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE8E84AC-225F-4FCA-B26C-EA5F99938F38}|Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights\\lightSource.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{EE8E84AC-225F-4FCA-B26C-EA5F99938F38}|Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights.vcxproj|solutionrelative:Textures \u0026 Multiple lights\\lightSource.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{EE8E84AC-225F-4FCA-B26C-EA5F99938F38}|Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights\\Phong.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{EE8E84AC-225F-4FCA-B26C-EA5F99938F38}|Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights.vcxproj|solutionrelative:Textures \u0026 Multiple lights\\Phong.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE8E84AC-225F-4FCA-B26C-EA5F99938F38}|Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights\\Phong.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{EE8E84AC-225F-4FCA-B26C-EA5F99938F38}|Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights.vcxproj|solutionrelative:Textures \u0026 Multiple lights\\Phong.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE8E84AC-225F-4FCA-B26C-EA5F99938F38}|Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights\\lightSource.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{EE8E84AC-225F-4FCA-B26C-EA5F99938F38}|Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights.vcxproj|solutionrelative:Textures \u0026 Multiple lights\\lightSource.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE8E84AC-225F-4FCA-B26C-EA5F99938F38}|Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights.vcxproj|C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights\\lightSource.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -29,12 +29,12 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 237,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "lightSource.fs",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights\\lightSource.fs",
               "RelativeDocumentMoniker": "Textures \u0026 Multiple lights\\lightSource.fs",
@@ -58,20 +58,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Phong.fs",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights\\Phong.fs",
               "RelativeDocumentMoniker": "Textures \u0026 Multiple lights\\Phong.fs",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights\\Phong.fs",
               "RelativeToolTip": "Textures \u0026 Multiple lights\\Phong.fs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-08-07T13:46:29.001Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Phong.vs",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights\\Phong.vs",
               "RelativeDocumentMoniker": "Textures \u0026 Multiple lights\\Phong.vs",
@@ -79,17 +79,18 @@
               "RelativeToolTip": "Textures \u0026 Multiple lights\\Phong.vs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-07T13:46:20.939Z"
+              "WhenOpened": "2024-08-07T13:46:20.939Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights\\main.cpp",
               "RelativeDocumentMoniker": "Textures \u0026 Multiple lights\\main.cpp",
               "ToolTip": "C:\\Users\\Christianna\\Documents\\GitHub\\Learn-OpenGL-Practice-Applications\\Lighting\\Textures \u0026 Multiple lights\\Textures \u0026 Multiple lights\\main.cpp",
               "RelativeToolTip": "Textures \u0026 Multiple lights\\main.cpp",
-              "ViewState": "AQIAAFsAAAAAAAAAAAAAAIQAAAAAAAAA",
+              "ViewState": "AQIAANMAAAAAAAAAAAAiwNEAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-07T13:44:13.602Z",
               "EditorCaption": ""
